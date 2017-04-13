@@ -24,7 +24,7 @@
 	height: .8rem;
 	float: left;
 	margin-left: .4rem;
-	margin-top: 1rem;
+	margin-top: .45rem;
 	display: inline-block;
 	background-image: url(../img/n-menu.png);
 	background-position: -18px -14px;
@@ -36,7 +36,7 @@
 	height: .9rem;
 	float: left;
 	margin-left: 2rem;
-	margin-top: 1rem;
+	margin-top: .45rem;
 	display: inline-block;
 	background-image: url(../img/n-title.png);
 	background-position: -4px 0px;
@@ -48,7 +48,7 @@
 	height: .8rem;
 	float: right;
 	margin-right: .4rem;
-	margin-top: 1rem;
+	margin-top: .45rem;
 	display: inline-block;
 	background-image: url(../img/n-search.png);
 	background-position: -3px -14px;
