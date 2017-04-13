@@ -1,0 +1,3 @@
+.chose>.swiper-container>.swiper-wrapper>.swiper-slide>img{
+	width: 7.5rem;
+}

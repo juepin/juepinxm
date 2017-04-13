@@ -145,7 +145,7 @@ div.four div.gray >div > p{
 }
 div.four div.gray >div > p:nth-of-type(1){
 	font-size:0.22rem;
-	margin-top:0.25rem;z-index;
+	margin-top:0.25rem;
 	color:#3292CF;
 }
 div.four div.gray >div > div{
