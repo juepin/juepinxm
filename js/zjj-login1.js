@@ -1,20 +1,31 @@
 $(function(){
-	$("#loginform").validate({
+	
+	$("#loginform").validate(
+	{
 		rules:{
 			user:{
 				required:true,
 			},
 			pass:{
                 required:true,
-             	rangelength:[6,10]
+             	rangelength:[1,12]
             },
 		},
 		message:{
 			user:"请输入名字",
 			pass:{
 				required:"请输入密码",
-				minlength:$.validator.format("密码不能小于{0}个字符"),
+				minlength:$.validator.format("密码不能小于{0}个字符")
 			},
 		}
+	}
+	)
+	$("#login").on("click",function(){
+		$("#loginform").submit();
 	})
+})
+$.validator.setDefaults({
+	submitHandler:function(){
+		alert("已提交");
+	}
 })
