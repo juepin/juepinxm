@@ -3,41 +3,36 @@ div.bg{
     height:13.34rem;
     /*position: relative;*/
 }
-.bg  #wrapper{
-    /*width:7.5rem;*/
-    height:100%;
-}
-.bg  #wrapper #scroller{
-    width:22.5rem;
-}
-.bg  #wrapper #scroller .bng{
-    width:22.5rem;
+/*.bg  .swiper-container{*/
+/*}*/
+/*.bg  .swiper-container .swiper-wrapper{*/
+    /*height:100%;*/
+/*}*/
+.bg .swiper-container .swiper-wrapper .swiper-slide:first-child{
+    background-image:url("../img/bg_01.png");
+    background-size: cover;
+    width:7.5rem;
     height:13.34rem;
-    position: absolute;
-    top:0;
-    right:0;
-    z-index:12;
-    background-image: url("../img/bg_02.png");
+}
+.bg .swiper-container .swiper-wrapper .swiper-slide:nth-child(2){
+    width:7.5rem;
+    height:13.34rem;
+    background-image:url("../img/bg_02.png");
     background-size: cover;
 }
-.bg .wrap{
-    position: absolute;
-    top:0;
-    left:0;
-    z-index:20;
+.bg .swiper-container .swiper-wrapper .swiper-slide:nth-child(3){
+    background-size: cover;
     width:7.5rem;
     height:13.34rem;
-    /*overflow: hidden;*/
+    background-image:url("../img/bg_03.png");
 }
-.bg .wrap .slide{
-    width:22.5rem;
+.bg .swiper-container .swiper-wrapper .swiper-slide img{
+    width:7.5rem;
     height:13.34rem;
-    opacity:0;
+    opacity:1;
+    transition:opacity 0.3s ease-out;
 }
-.bg .wrap .active{
+.bg .swiper-container .swiper-wrapper .swiper-slide .active{
     opacity:1;
 }
-.bg .wrap .slide img{
-    width:7.5rem;
-    height:13.34rem;
-}
+
