@@ -1,14 +1,26 @@
 body{
-
+	height: 100%;
+	height: 100%;
+	background:#fff;
 	overflow:auto;
 }
+html{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;	
+	position:relative;
+}
+
 header{
 	width: 7.5rem;
 	height: 2.13rem;
-	background: url('../img/n-bg.png')
+	background: url('../img/n-bg.png');
+	position: fixed;
+	z-index: 10000;
+	top:0;
+	left: 0
 }
 header>.top{
-/*	position: fixed;*/
 	width:100%;
 	height:1.09rem;
 	padding-top:.20rem;
@@ -35,8 +47,6 @@ header>.top>.rg>a>img{
     width: 1rem
 }
 header>.bottom{
-	/*position: fixed;
-	top:1.09rem;*/
 	width: 2.58rem;
 	height: .68rem;
 	margin-left:2.46rem;
@@ -83,58 +93,53 @@ header>.bottom>a>.baby>span{
    width: 100%;
    height: 5.02rem;
    position: relative;
-}
-.chose>ul>li{
-   width: 7.5rem;
-   height: 5.02rem;
-   float: left;
-   position: absolute;
-   left: 0;
-   top:0;
-}	
-.chose>ul>li>img{
-	width: 7.5rem;
-	height: 100%
+   margin-top: 1.09rem;
 }
 
-.chose>ul>li>.dingwei{
+.chose>.swiper-container >.swiper-pagination>.swiper-pagination-bullet-active {
+    background: #007aff;
+}
+.chose>.swiper-container>.swiper-wrapper>.swiper-slide>img{
+	width: 7.5rem;
+}
+.dingwei{
 	width: 100%;
 	height: 1.09rem;
 	position: absolute;
 	bottom: 0;
 	left: 0;
-	background: rgba(255,255,255,.6);
+	background:#e9e9e9
 }
-.chose>ul>li>.dingwei>div{
+.dingwei>div{
 	height: 1.09rem;
     float: left;
 }
-.chose>ul>li>.dingwei>.icon,.chose>ul>li>.dingwei>.icon>img{
+.dingwei>.icon,.dingwei>.icon>img{
 	width: 1.25rem;
 }
 
-.chose>ul>li>.dingwei>.font{
+.dingwei>.font{
 	width: 2.6rem;
 }
-.chose>ul>li>.dingwei>.font>p:first-child{
+.dingwei>.font>p:first-child{
 	height: 40%;
 	color: #666;
 	padding: .05rem 0  0  .25rem;
 	font-size: .12rem;
 	line-height: .6rem
 }
-.chose>ul>li>.dingwei>.font>p:last-child{
+.dingwei>.font>p:last-child{
 	height: 60%;
 	color: #333;
 	font-size: .14rem;
 	padding: .05rem 0  0  .25rem;
 }
-.chose>ul>li>.dingwei>.talk{
+.dingwei>.talk{
 	width: 1.48rem;
 	height: 100%;
 	padding-left:.26rem ;
 }
-.chose>ul>li>.dingwei>.talk>div{
+.dingwei>.talk>div{
 	float: left;
 	margin-top:.25rem;
 	width: .55rem;
@@ -144,11 +149,11 @@ header>.bottom>a>.baby>span{
 	text-align: center;
 	line-height: .55rem;
 }
-.chose>ul>li>.dingwei>.talk>div>img{
+.dingwei>.talk>div>img{
 	width: .50rem;
 	border-radius: 50%
 }
-.chose>ul>li>.dingwei>.talk>span{
+.dingwei>.talk>span{
 	float: left;
 	width: .86rem;
 	height:50%;
@@ -156,13 +161,11 @@ header>.bottom>a>.baby>span{
 	padding-left:.07rem;
 	color: #666;
 }
-.chose>ul>li>.dingwei>.talk>span:last-child{
+.dingwei>.talk>span:last-child{
 	line-height:.3rem;
 	color: #333;
 }
-/*.chose>ul>li>.dingwei>.talk>span:first-child{
-	color: #aaa;
-}*/
+
 /*四个图标*/
 section{
 	width: 100%;
@@ -183,7 +186,7 @@ section>.icon>a>img{
 	width: 100%;
 	height: 1.28rem;
 	line-height: 1.28rem;
-	background: #ddd
+	background: #e9e9e9
 }
 .title>img{
 	width: 1.90rem;
@@ -194,7 +197,6 @@ section>.icon>a>img{
 	margin-top: .5rem;
 	width: 7.5rem;
 	height: 3.98rem;
-	background: url(../img/n-bbg.png);
 	background-size:100%;
 	background-clip: border-box;
 }
