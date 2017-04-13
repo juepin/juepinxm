@@ -1,21 +1,21 @@
-body{
-	height: 100%;
-	height: 100%;
-	background:#fff;
-	overflow:auto;
-}
 html{
-	width: 100%;
+	/*width: 100%;
 	height: 100%;
 	overflow: hidden;	
-	position:relative;
+	position:relative;*/
+	-ms-touch-action: none;
 }
-
+body{
+	/*height: 100%;*/
+	/*height: 100%;*/
+	/*background:#fff;*/
+	overflow:hidden;
+}
 header{
 	width: 7.5rem;
 	height: 2.13rem;
 	background: url('../img/n-bg.png');
-	position: fixed;
+	position: absolute;
 	z-index: 10000;
 	top:0;
 	left: 0
@@ -93,14 +93,20 @@ header>.bottom>a>.baby>span{
    width: 100%;
    height: 5.02rem;
    position: relative;
-   margin-top: 1.09rem;
+   margin-top: 2rem;
 }
-
 .chose>.swiper-container >.swiper-pagination>.swiper-pagination-bullet-active {
     background: #007aff;
 }
 .chose>.swiper-container>.swiper-wrapper>.swiper-slide>img{
 	width: 7.5rem;
+}
+.ban>.swiper-container3{
+	width: 7.02rem;
+	margin:0 auto;
+}
+.ban>.swiper-container3>.swiper-wrapper>.swiper-slide>img{
+	width: 7.02rem;
 }
 .dingwei{
 	width: 100%;
@@ -117,7 +123,6 @@ header>.bottom>a>.baby>span{
 .dingwei>.icon,.dingwei>.icon>img{
 	width: 1.25rem;
 }
-
 .dingwei>.font{
 	width: 2.6rem;
 }
@@ -193,38 +198,11 @@ section>.icon>a>img{
 	margin:.2rem 0 0 .38rem;
 }
 /*标题2*/
-.title2{
+.ban{
 	margin-top: .5rem;
 	width: 7.5rem;
 	height: 3.98rem;
-	background-size:100%;
-	background-clip: border-box;
-}
-
-.title2>.left{
-	float: left;
-	width: 2.61rem;
-}
-.title2>.left>a>img,.title2>.left>a{
-    width: 2.61rem;
-    display: block;
-}
-.title2>.right{
-	width: 3.6rem;
-    padding-top: 1.04rem;
-    float: left;
-    height: 2.94rem
-}
-.title2>.right>.cloud,.title2>.right>.cloud>img{
-	height: .64rem;
-}
-.title2>.right>.cloud>div{
-	display: inline-block;
-	width: 1.06rem;
-	height: .64rem;
-}
-.title2>.right>.cloud>div>img{
-	text-align: center;
+	position: relative;
 }
 /*作品展示开始*/
 .special{
@@ -288,6 +266,9 @@ section>.icon>a>img{
 	background: url('../img/n-tou1.png');
 	background-size: 100%;
 }
+.designer>.left>.touxiang>img{
+	width: 1.14rem
+}
 .designer>.left>.tx{
 	background: url('../img/n-tou2.png');
 	background-size: 100%;
@@ -347,28 +328,82 @@ section>.icon>a>img{
 }
 .don{
 	width: 100%;
-	height: .88rem;
+	height: .94rem;
 	background: #323840;
-	position: fixed;
-	bottom:0 ;
-	left: 0;
 }
 .don >ul{
 	width: 100%;
-	height: .88rem;
-	float: left;
-	display: block;
+	height: .94rem;
+	display: flex;
 }
 .don> ul> li {
 	display: block;
-	width: 18%;
 	text-align: center;
-	float: left;
-	margin: 0 1%;
 	height: 100%;
+	width: 20%;
 }
-.don >ul >li img{
-	width: .88rem;
-	height: .9rem;
-	margin-bottom: .07rem;
+.don >ul >li>a{
+	display: block;
+	width:.88rem;
+	height: .94rem;
+	margin: 0 auto
+}
+.don >ul >li:nth-child(1)>a{
+	background: url(../img/gx-fix_03.png);
+	background-size: 100%;
+}
+.don >ul >li:nth-child(1)>a:hover{
+	background: url(../img/n-hover1.png);
+	background-size: 100%;
+}
+.don >ul >li:nth-child(2)>a{
+	background: url(../img/gx-fix_78.png);
+	background-size: 100%;
+}
+.don >ul >li:nth-child(3)>a{
+	background: url(../img/gx-fix_80.png);
+	background-size: 100%;
+}
+.don >ul >li:nth-child(4)>a{
+	background: url(../img/gx-fix_83.png);
+	background-size: 100%;
+}
+.don >ul >li:nth-child(5)>a{
+	background: url(../img/gx-fix_85.png);
+	background-size: 100%;
+}
+.don >ul >li:nth-child(5)>a:hover{
+	background: url(../img/cr-wd1.png);
+	background-size: 100%;
+}
+#header {
+	position: absolute;
+	z-index: 2;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 2.13rem;
+	padding: 0;
+}
+
+#footer {
+	position: absolute;
+	z-index: 2;
+	bottom: 0;
+	left: 0;
+}
+#wrapper {
+	position: absolute;
+	z-index: 1;
+	top: 0rem;
+	left: 0;
+	bottom: .8rem;
+	width: 100%;
+	background: #ccc;
+	/*height: auto;*/
+	/*overflow: hidden;*/
+}
+
+#scroller {
+	background: #fff;
 }
