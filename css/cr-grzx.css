@@ -5,14 +5,14 @@ div.head{
 	width:100%;
 	height:2.1rem;
 	margin:0 auto;
-	background-image:url(../img/home/1首页_02.png);
+	background-image:url(../img/cr-bg1.png);
 	position:relative;
 }
 .head .line{
 	width:7.02rem;
 	height:0.1rem;
 	margin:0 auto;
-	background-image:url(../img/image/login/32登录_03.png);
+	background-image:url(../img/cr-top1.png);
 	background-position:center;
 	background-size:100%;
 	background-repeat:no-repeat;
@@ -40,7 +40,7 @@ div.head{
 	width:1.56rem;
 	height:1.56rem;
 	border-radius:50%;
-	background-image:url(../img/image/personal/personal_12.png);
+	background-image:url(../img/cr-grzxtx1.png);
 	background-position:center;
 	background-size:100%;
 	background-repeat:no-repeat;
@@ -91,15 +91,6 @@ div.font div.font1 span{
 }
 div.font .font1 img{
 	height:0.24rem;
-}
-div.font div.line{
-	margin-top:0.15rem;
-	width:100%;
-	height:0.1rem;
-	background-image:url(../img/image/personal/personal_19.png);
-	background-position:center;
-	background-repeat:no-repeat;
-	background-size:5%;
 }
 div.font div.star{
 	margin-top:0.15rem;
@@ -203,7 +194,7 @@ div.list >div.toux{
 	border-radius:50%;
 	margin-top:0.15rem;
 	margin-left:0.15rem;
-	background-image:url(../img/image/personal/personal_59.png);
+	background-image:url(../img/cr-grzxtx2.png);
 	background-position:center;
 	background-repeat:no-repeat;
 	background-size:100%;
@@ -239,7 +230,7 @@ div.list >div.line2{
 	float:left;
 	margin-left:0.10rem;
 	margin-top:0.02rem;
-	background-image:url(../img/image/personal/personal_70.png);
+	background-image:url(../img/cr-nameline.png);
 	background-position:center;
 	background-repeat:no-repeat;
 	background-size:100%;
