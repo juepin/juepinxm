@@ -10,7 +10,7 @@ body{
 	float: left;
 	position: fixed;
 	background: #282828;
-	z-index: 100;
+	z-index: 10;
 }
 .search-header .leimu1{
 	width: 100%;
@@ -87,6 +87,7 @@ body{
 
 /*搜索框*/
 .search-sousuo{
+	width: 4.7rem;
 	height: 1rem;
 	float: left;
 	position: fixed;
@@ -149,6 +150,36 @@ body{
 	height: .62rem;
 	/*background: red;*/
 }
+
+
+/*下拉*/
+.xiala{
+	width:4.5rem;
+	height: 120px;
+	position:fixed;
+	left: 70px;
+	top: 109px;
+	z-index: 3;
+	float: left;
+	overflow: hidden;
+	background: white;
+	border: 1px solid #eee;
+	z-index: 110;
+	background: #F6F6F6;
+	display: none;
+}
+
+.xiala li{
+	width: 80%;
+	height: .4rem;
+	margin: 0 auto;
+	box-sizing: border-box;
+	border-bottom: 1px dashed #AAAAAA;
+	font-size: 16px;
+	font-family: "苹方";
+	padding-left: .3rem;
+}
+
 .search-list{
 	width:100%;
 	height:1.7rem;
@@ -181,6 +212,7 @@ body{
 	background-position: 6px 6px;
 	background-repeat: no-repeat;
 	background-size: 1.2rem;
+	z-index: 99;
 }
 .search-list ul li p{
 	color: white;
@@ -190,49 +222,23 @@ body{
 }
 
 /*轮播*/
-.search-banner{
+.swiper-container{
 	width: 100%;
-	height: 3.63rem;
+	height: 2.87rem;
 	position: absolute;
-	top: 5.2rem;
+	top:4.7rem;
 }
-.search-bannerbox{
-	width: 80%;
-	height: 100%;
+.swiper-slide{
+	width: 55%;
+	height: auto;
 	margin: 0 auto;
-	background: red;
 }
-/*bannerbox li 还没做*/
-.search-banner .btnbox{
-	width: 3.4rem;
-	height: .16rem;
-	margin: 0 auto;
-	bottom: .01rem;
-	margin-top: 4rem;
-	margin-left: 36%;
-}
-.search-banner .btnbox li{
-	display: block;
-	width:.16rem;
-	height: .16rem;
-	border-radius: 50%;
-	background: #C3C3C3;
-	opacity: 0.8;
-	margin-right: .16rem;
-	float: left;
-	border: 1px solid#B0B0B0;
-	position: relative;
-}
-.search-banner .btnbox  .color{
-	background: #E5C328;
-}
-
 /*推荐*/
 .search-tuijian{
 	width: 100%;
 	height: 1rem;
 	position: absolute;
-	top: 10rem;
+	top: 8.2rem;
 	background-image:url(../img/gx-search_16.png) ;
 	background-repeat: no-repeat;
 	background-position: 10px 0px;
@@ -263,7 +269,7 @@ body{
 	width: 100%;
 	height:auto;
 	position: absolute;
-	top: 11.4rem;
+	top: 9.4rem;
 	display: block;
 	float: left;
 /*	background: white;*/
@@ -312,7 +318,7 @@ body{
 	width: 100%;
 	height: 6rem;
 	position: absolute;
-	top: 14rem;
+	top: 12rem;
 	background-image:url(../img/gx-search_23.png) ;
 	background-repeat: no-repeat;
 	background-position: 10px 0px;

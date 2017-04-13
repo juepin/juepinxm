@@ -9,8 +9,12 @@
 	<meta name="x5-fullscreen" content="true" />
 	<meta name="full-screen" content="yes">
 	<meta name="format-detection" content="telephone=no, email=no" />
+	<script type="text/javascript" src="../js/jquery.js"></script>
+	<link rel="stylesheet" href="../css/swiper.css"> 
 	<link rel="stylesheet" href="../css/gx-search.css"> 
 	<script type="text/javascript" src="../js/rem.js"></script>
+	<script type="text/javascript" src="../js/swiper.js"></script>
+	<script type="text/javascript" src="../js/gx-search.js"></script>
     <title></title>
 </head>
 <body>
@@ -35,6 +39,15 @@
 		<div class="xuanze"></div>
 	</div>
 	
+	<!--下拉-->
+	<ul class="xiala">
+		<li><p>我去</p></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
 	<!--选择列表-->
 	<div class="search-list">
 		<ul>
@@ -52,25 +65,17 @@
 	</div>
 	
 	<!--轮播-->
-	<div class="search-banner">
-		<ul class="search-bannerbox">
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-		</ul>
-		<ul class="btnbox">
-			<li class="color"></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-		</ul>
-	</div>
-	
+	<div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background-image:url(../img/b1.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(../img/b2.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(../img/b3.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(../img/b4.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(../img/b5.jpg)"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+    
 	<!--推荐-->
 	<div class="search-tuijian">
 		<div>
@@ -137,4 +142,21 @@
 		</ul>
 	</div>
 </body>
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        effect: 'coverflow',
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        coverflow: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows : true,
+        },
+        loop:true
+    });
+    </script>
 </html>
