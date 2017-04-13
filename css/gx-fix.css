@@ -27,9 +27,9 @@
 	margin-top: 1rem;
 	display: inline-block;
 	background-image: url(../img/n-menu.png);
-	background-position: 114px 119px;
+	background-position: -18px -14px;
 	background-size: 66px;
-
+	background-repeat: no-repeat;
 }
 .header .leimu1 div:nth-child(2){
 	width: 1.06rem;
@@ -39,8 +39,9 @@
 	margin-top: 1rem;
 	display: inline-block;
 	background-image: url(../img/n-title.png);
-	background-position: 126px 147px;
+	background-position: -4px 0px;
 	background-size: 66px;
+	background-repeat: no-repeat;
 }
 .header .leimu1 div:last-child{
 	width: 1.4rem;
@@ -50,8 +51,9 @@
 	margin-top: 1rem;
 	display: inline-block;
 	background-image: url(../img/n-search.png);
-	background-position: 86px 118px;
+	background-position: -3px -14px;
 	background-size: 90px;
+	background-repeat: no-repeat;
 }
 .header .leimu2{
 	width: 100%;
@@ -64,9 +66,10 @@
 	margin: 0 auto;
 	margin-bottom: .3rem;
 	background-image: url(../img/n-chose.png);
-	background-position: -2px 105px;
+	background-position: -2px 1px;
 	background-size: 196px;
 	position: relative;
+	background-repeat: no-repeat;
 }
 .header .leimu2 .kuang .baby{
 	width: 2rem;

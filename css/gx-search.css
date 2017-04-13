@@ -1,19 +1,23 @@
 @import url("common.css");
-
 /*开头固定定位*/
+body{
+	overflow: auto;
+	background: white;
+}
 .search-header{
 	width: 100%;
 	height:5rem;
 	float: left;
 	position: fixed;
 	background: #282828;
+	z-index: 100;
 }
 .search-header .leimu1{
 	width: 100%;
 	height: 2.5rem;
 	float: left;
 	text-align: justify;
-	background-image: url(../img/home/1首页_02.png);
+	background-image: url(../img/n-bg.png);
 }
 .search-header .leimu1:after{
 	content: "";
@@ -27,10 +31,10 @@
 	margin-left: .4rem;
 	margin-top: 1rem;
 	display: inline-block;
-	background-image: url(../img/home/1首页_05.png);
-	background-position: 114px 119px;
+	background-image: url(../img/n-menu.png);
+	background-position: -18px -14px;
 	background-size: 66px;
-
+	background-repeat: no-repeat;
 }
 .search-header .leimu1 div:nth-child(2){
 	width: 1.06rem;
@@ -75,18 +79,20 @@
 	margin-right: .4rem;
 	margin-top: 1rem;
 	display: inline-block;
-	background-image: url(../img/home/1首页_08.png);
-	background-position: 86px 118px;
+	background-image: url(../img/n-search.png);
+	background-position: -3px -14px;
 	background-size: 90px;
+	background-repeat: no-repeat;
 }
 
 /*搜索框*/
 .search-sousuo{
 	height: 1rem;
 	float: left;
-	position: absolute;
+	position: fixed;
 	left: 75px;
 	top: 85px;	
+	z-index: 100;
 }
 .search-sousuo input{
 	width: 4.5rem;
@@ -106,7 +112,7 @@
 	position: absolute;
 	right:50px;
 	top:26px;
-	background-image: url(../img/search/3搜索_03.png);
+	background-image: url(../img/gx-search_03.png);
 	/*background-position: 10px 10px;*/
 	background-size: 48px;
 	background-repeat: no-repeat;
@@ -118,7 +124,7 @@
 	position: absolute;
 	right:5px;
 	top:25px;
-	background-image: url(../img/search/3搜索_05.png);
+	background-image: url(../img/gx-search_05.png);
 	/*background-position: 10px 10px;*/
 	background-size: 35px;
 	background-repeat: no-repeat;
@@ -130,9 +136,10 @@
 .search-list{
 	width:100%;
 	height:1.7rem;
-	position: absolute;
+	position: fixed;
 	top: 3.2rem;
 	float: left;
+	z-index: 100;
 }
 .search-list ul:first-child{
 	width: 100%;
@@ -154,7 +161,7 @@
 	width: 20%;
 	height: 100%;
 	float: left;
-	background-image: url(../img/search/3搜索_12.png);
+	background-image: url(../img/gx-search_12.png);
 	background-position: 6px 6px;
 	background-repeat: no-repeat;
 	background-size: 1.2rem;
@@ -200,13 +207,113 @@
 
 /*推荐*/
 .search-tuijian{
-	width: 3rem;
+	width: 100%;
 	height: 1rem;
 	position: absolute;
 	top: 10rem;
-	background-image:url(..img/search/3搜索_16.png) ;
+	background-image:url(../img/gx-search_16.png) ;
+	background-repeat: no-repeat;
+	background-position: 10px 0px;
+	background-size: 5.2rem;
+}
+.search-tuijian div{
+	margin-right: 10px;
+}
+.search-tuijian span{
+	display: block;
+	float: right;
+	font-size: 14px;
+	font-family: "宋体";
+	margin-top: 14px;
+	margin-right: 5px;
+}
+.search-tuijian p{
+	display: block;
+	float: right;
+	font-size: 14px;
+	font-family: "苹方";
+	margin-top: 12px;
+	margin-right: 5px;
+}
+
+/*查看*/
+.search-look{
+	width: 100%;
+	height:auto;
+	position: absolute;
+	top: 11.4rem;
+	display: block;
+	float: left;
+/*	background: white;*/
+	position: relative;
+}
+.search-look li:first-child{
+	background-image: url(../img/gx-search_19.png);
 	background-repeat: no-repeat;
 	background-position: 10px 10px;
+	background-size: 3.7rem;
+	width: 48%;
+	height:2rem;
+	display: block;
+	float: left;
+	/*margin-bottom: .5rem;*/
+}
+.search-look li:last-child{
+	background-image: url(../img/gx-search_20.png);
+	background-repeat: no-repeat;
+	background-position: 10px 14px;
+	background-size: 3.5rem;
+	width: 48%;
+	height: 2rem;
+	display: block;
+	float: left;
+}
+.search-look li span{
+	width: 70px;
+	height: 20px;
+	position: absolute;
+	top: 77px;
+	background: #F8F7B4;
+	border-radius:5px;
+	text-align: center;
+	line-height: 20px;
+}
+.search-look li:first-child span{
+	left: 34px;
+}
+.search-look li:last-child span{
+	right: 90px;
+}
+
+/*设计师*/
+.search-master{
+	width: 100%;
+	height: 5rem;
+	position: absolute;
+	top: 14rem;
+	background-image:url(../img/gx-search_23.png) ;
+	background-repeat: no-repeat;
+	background-position: 10px 0px;
+	background-size:2.4rem;
+	display: block;
+}
+.search-master li:first-child{
+	background-image: url(../img/gx-search_29.png);
+	background-repeat: no-repeat;
+	background-position: 10px 46px;
+	background-size: 7rem;
+	width:100%;
+	height:2.5rem;
+	display: block;
+}
+.search-master li:last-child{
+	background-image: url(../img/gx-search_29.png);
+	background-repeat: no-repeat;
+	background-position: 10px 10px;
+	background-size: 7rem;
+	width: 100%;
+	height: 2.5rem;
+	display: block;
 }
 /*底部固定定位*/
 .search-don{
