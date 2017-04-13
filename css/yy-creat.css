@@ -2,7 +2,6 @@
 body{
     background-color:#fff;
     overflow: auto;
-    height:2000px;
 }
 .header{
     width: 100%;
@@ -167,6 +166,7 @@ body{
 /*品牌原创*/
 .creat{
     width:100%;
+    overflow: hidden;
 }
 .creat .title{
     margin-top:0.4rem;
@@ -180,7 +180,9 @@ body{
 }
 .creat ul li{
     width:100%;
-    margin-top:0.2rem;
+    margin-top:0.3rem;
+    overflow: hidden;
+    height:3.2rem;
 }
 .creat ul li .bg{
     width:6.32rem;
@@ -202,6 +204,22 @@ body{
     background-image:url("../img/creat/hcr_03.png");
     background-size: cover;
 }
+.creat ul li .bg .zz{
+    background-image: url("../img/creat/creat_35.png");
+    position: absolute;
+    right:0.1rem;
+    bottom:-0.22rem;
+    z-index:10;
+    width:4.66rem;
+    height:0.53rem;
+    background-size:100%;
+}
+.creat ul li:nth-child(2) .bg .sp{
+    background-image:url("../img/creat/hcr_07.png");
+}
+.creat ul li:nth-child(3) .bg .sp{
+    background-image:url("../img/creat/hcr_10.png");
+}
 .creat ul li .bg .inf{
     width:2.6rem;
     height:2.56rem;
@@ -222,7 +240,46 @@ body{
 .creat ul li .bg .text{
     position: absolute;
     left:0.4rem;
-    top:0.02rem;
+    top:0.2rem;
+    z-index:200;
+}
+.creat ul li .bg .text h6{
+    margin-top:0.8rem;
+    margin-left:0.6rem;
+}
+.creat ul li .bg .text h6 span{
+    font-size:0.22rem;
+    font-weight:bold;
+    color:#c7c7c7;
+    margin-left:0.14rem;
+}
+.creat ul li .bg .text > p{
+    color:#adadac;
+    font-size:0.22rem;
+    margin-top:0.52rem;
+    text-align: center;
+    margin-left:0.48rem;
+}
+.creat ul li .bg .text .note{
+    margin-top:0.2rem;
+    height:0.4rem;
+}
+.creat ul li .bg .text .note img{
+    float: left;
     width:0.38rem;
-    height:0.46rem;
+    height:0.38rem;
+    margin-left:0.3rem;
+}
+.creat ul li .bg .text .note .icon{
+    float: left;
+    margin-left:0.2rem;
+}
+.creat ul li .bg .text .note .icon img{
+    width:0.18rem;
+    height:0.18rem;
+    margin-left:0.05rem;
+    margin-top:0.1rem;
+}
+.creat {
+    margin-bottom:1rem;
 }
