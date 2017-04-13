@@ -10,7 +10,7 @@ body{
     overflow:hidden;
 }
 *{
-    font-family: Helvetica,sans-serif;
+    font-family: Helvetica,sans-serif,'微软雅黑',arial;
     max-height:9999999px;
     font-size:12px;
 }
