@@ -1,0 +1,20 @@
+$(function(){
+	$("#loginform").validate({
+		rules:{
+			user:{
+				required:true,
+			},
+			pass:{
+                required:true,
+             	rangelength:[6,10]
+            },
+		},
+		message:{
+			user:"请输入名字",
+			pass:{
+				required:"请输入密码",
+				minlength:$.validator.format("密码不能小于{0}个字符"),
+			},
+		}
+	})
+})

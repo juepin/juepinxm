@@ -1,19 +1,23 @@
 @import url("common.css");
-
 /*开头固定定位*/
+body{
+	overflow: auto;
+	background: white;
+}
 .search-header{
 	width: 100%;
-	height:5rem;
+	height:4.4rem;
 	float: left;
 	position: fixed;
 	background: #282828;
+	z-index: 100;
 }
 .search-header .leimu1{
 	width: 100%;
-	height: 2.5rem;
+	height: 1.76rem;
 	float: left;
 	text-align: justify;
-	background-image: url(../img/home/1首页_02.png);
+	background-image: url(../img/n-bg.png);
 }
 .search-header .leimu1:after{
 	content: "";
@@ -25,12 +29,12 @@
 	height: .8rem;
 	float: left;
 	margin-left: .4rem;
-	margin-top: 1rem;
+	margin-top: .45rem;
 	display: inline-block;
-	background-image: url(../img/home/1首页_05.png);
-	background-position: 114px 119px;
+	background-image: url(../img/gx-search_102.png);
+	background-position: -16px -14px;
 	background-size: 66px;
-
+	background-repeat: no-repeat;
 }
 .search-header .leimu1 div:nth-child(2){
 	width: 1.06rem;
@@ -50,7 +54,7 @@
 	height: .4rem;
 	position: absolute;
 	left: 0px;
-	bottom: 24px;
+	bottom: 51px;
 }
 .search-header .leimu1 div:nth-child(2) P:first-child span{
 	font-size: 30px;
@@ -66,27 +70,29 @@
 	height: .4rem;
 	position: absolute;
 	left: -16px;
-	bottom: -8px;
+	bottom: 21px;
 }
 .search-header .leimu1 div:last-child{
 	width: 1.4rem;
 	height: .8rem;
 	float: right;
 	margin-right: .4rem;
-	margin-top: 1rem;
+	margin-top: .45rem;
 	display: inline-block;
-	background-image: url(../img/home/1首页_08.png);
-	background-position: 86px 118px;
+	background-image: url(../img/n-search.png);
+	background-position: -3px -14px;
 	background-size: 90px;
+	background-repeat: no-repeat;
 }
 
 /*搜索框*/
 .search-sousuo{
 	height: 1rem;
 	float: left;
-	position: absolute;
+	position: fixed;
 	left: 75px;
-	top: 85px;	
+	top: 47px;	
+	z-index: 100;
 }
 .search-sousuo input{
 	width: 4.5rem;
@@ -102,23 +108,40 @@
 	float: left;
 	background: #F6F6F6;
 }
+.search-sousuo .dian1{
+	width: .1rem;
+	height: .1rem;
+	background: #3477FF;
+	border-radius: 50%;
+	position: absolute;
+	left: -5px;
+	top: 39px;
+}
 .search-sousuo .xiangji{
 	position: absolute;
 	right:50px;
 	top:26px;
-	background-image: url(../img/search/3搜索_03.png);
-	/*background-position: 10px 10px;*/
+	background-image: url(../img/gx-search_03.png);
 	background-size: 48px;
 	background-repeat: no-repeat;
 	width: .89rem;
 	height: .6rem;
-	/*background: red;*/
+}
+.search-sousuo .dian2{
+	width: .1rem;
+	height: .1rem;
+	background: #FC2049;
+	border-radius: 50%;
+	position: absolute;
+	right: 53px;
+	top: 29px;
+	z-index: 100;
 }
 .search-sousuo .xuanze{
 	position: absolute;
 	right:5px;
 	top:25px;
-	background-image: url(../img/search/3搜索_05.png);
+	background-image: url(../img/gx-search_05.png);
 	/*background-position: 10px 10px;*/
 	background-size: 35px;
 	background-repeat: no-repeat;
@@ -126,13 +149,13 @@
 	height: .62rem;
 	/*background: red;*/
 }
-
 .search-list{
 	width:100%;
 	height:1.7rem;
-	position: absolute;
-	top: 3.2rem;
+	position: fixed;
+	top: 2.4rem;
 	float: left;
+	z-index: 100;
 }
 .search-list ul:first-child{
 	width: 100%;
@@ -154,7 +177,7 @@
 	width: 20%;
 	height: 100%;
 	float: left;
-	background-image: url(../img/search/3搜索_12.png);
+	background-image: url(../img/gx-search_12.png);
 	background-position: 6px 6px;
 	background-repeat: no-repeat;
 	background-size: 1.2rem;
@@ -170,10 +193,16 @@
 .search-banner{
 	width: 100%;
 	height: 3.63rem;
-	background: red;
 	position: absolute;
 	top: 5.2rem;
 }
+.search-bannerbox{
+	width: 80%;
+	height: 100%;
+	margin: 0 auto;
+	background: red;
+}
+/*bannerbox li 还没做*/
 .search-banner .btnbox{
 	width: 3.4rem;
 	height: .16rem;
@@ -200,13 +229,277 @@
 
 /*推荐*/
 .search-tuijian{
-	width: 3rem;
+	width: 100%;
 	height: 1rem;
 	position: absolute;
 	top: 10rem;
-	background-image:url(..img/search/3搜索_16.png) ;
+	background-image:url(../img/gx-search_16.png) ;
+	background-repeat: no-repeat;
+	background-position: 10px 0px;
+	background-size: 5.2rem;
+}
+.search-tuijian div{
+	margin-right: 10px;
+}
+.search-tuijian span{
+	display: block;
+	float: right;
+	font-size: 14px;
+	font-family: "宋体";
+	margin-top: 14px;
+	margin-right: 5px;
+}
+.search-tuijian p{
+	display: block;
+	float: right;
+	font-size: 14px;
+	font-family: "苹方";
+	margin-top: 12px;
+	margin-right: 5px;
+}
+
+/*查看*/
+.search-look{
+	width: 100%;
+	height:auto;
+	position: absolute;
+	top: 11.4rem;
+	display: block;
+	float: left;
+/*	background: white;*/
+	position: relative;
+}
+.search-look li:first-child{
+	background-image: url(../img/gx-search_19.png);
 	background-repeat: no-repeat;
 	background-position: 10px 10px;
+	background-size: 3.7rem;
+	width: 48%;
+	height:2rem;
+	display: block;
+	float: left;
+	/*margin-bottom: .5rem;*/
+}
+.search-look li:last-child{
+	background-image: url(../img/gx-search_20.png);
+	background-repeat: no-repeat;
+	background-position: 10px 14px;
+	background-size: 3.5rem;
+	width: 48%;
+	height: 2rem;
+	display: block;
+	float: left;
+}
+.search-look li span{
+	width: 70px;
+	height: 20px;
+	position: absolute;
+	top: 77px;
+	background: #F8F7B4;
+	border-radius:5px;
+	text-align: center;
+	line-height: 20px;
+}
+.search-look li:first-child span{
+	left: 34px;
+}
+.search-look li:last-child span{
+	right: 90px;
+}
+
+/*设计师*/
+.search-master{
+	width: 100%;
+	height: 6rem;
+	position: absolute;
+	top: 14rem;
+	background-image:url(../img/gx-search_23.png) ;
+	background-repeat: no-repeat;
+	background-position: 10px 0px;
+	background-size:2.4rem;
+	display: block;
+}
+.search-master li:first-child{
+	background-image: url(../img/gx-search_29.png);
+	background-repeat: no-repeat;
+	background-position: 10px 46px;
+	background-size: 7rem;
+	width:100%;
+	height:2.5rem;
+	display: block;
+	position: relative;
+}
+.search-master li:last-child{
+	background-image: url(../img/gx-search_29.png);
+	background-repeat: no-repeat;
+	background-position: 10px 10px;
+	background-size: 7rem;
+	width: 100%;
+	height: 2.5rem;
+	display: block;
+	position: relative;
+}
+.search-master .touxiang{
+	background-image: url(../img/gx-search_26.png);
+	background-repeat: no-repeat;
+	background-position: 10px 5px;
+	width: 50%;
+	height: .2rem;
+}
+.search-master li .touxiang{
+	width: .8rem;
+	height: .8rem;
+	position: absolute;
+	left: 17px;
+	border-radius: 50%;
+	box-sizing: border-box;
+	border: 1px solid #AF9D4D;
+	box-shadow:1px 1px 1px rgba(0,0,0,.2);
+}
+.search-master li .m1{
+	font-size: 12px;
+	position: absolute;
+	left: 19px;
+	font-family:"San Francisco Display Bold" ;
+}
+.search-master li:first-child .touxiang{
+	top: 58px;
+	background-image: url(../img/f859ded9b41f5c57.jpg);
+	background-position: 0px 0px;
+	background-size: 40px;
+	overflow: hidden;
+}
+.search-master li:first-child p{
+	top: 102px;
+}
+.search-master li:last-child .touxiang{
+	top: 22px;
+	background-image: url(../img/f859ded9b41f5c57.jpg);
+	background-position: 0px 0px;
+	background-size: 40px;
+	overflow: hidden;
+}
+.search-master li:last-child p{
+	top: 66px;
+	left: 21px;
+}
+.search-master li .m2{
+	font-size: 10px;
+	font-weight: bold;
+	font-family:"San Francisco Display Bold" ;
+	position: absolute;
+	top: 55px;
+	left: 71px;
+	color: #5C5C5C;
+}
+.search-master li .m3{
+	font-size: 10px;
+	font-family:"San Francisco Display Bold" ;
+	position: absolute;
+	top: 55px;
+	left: 123px;
+	color: #5C5C5C;
+}
+.search-master li .m4{
+	font-size: 10px;
+	font-family:"San Francisco Display Bold" ;
+	position: absolute;
+	top: 55px;
+	left: 138px;
+	color: #FE7A6D;
+}
+.search-master li .huo1{
+	display: block;
+	width: 55px;
+	height: 14px;
+	position: absolute;
+	right:122px;
+	top: 58px;
+	background-image: url(../img/gx-search_31.png);
+	background-size: 14px;
+}
+.search-master li .huo2{
+	display: block;
+	width: 14px;
+	height: 14px;
+	position: absolute;
+	right:108px;
+	top: 58px;
+	background-image: url(../img/gx-search_33.png);
+	background-size: 14px;
+}
+.search-master li .m5{
+	font-size: 10px;
+	font-family:"苹方" ;
+	position: absolute;
+	top: 74px;
+	left: 71px;
+	color: #6E6E6E;
+}
+.search-master li .m6{
+	font-size: 10px;
+	font-family:"San Francisco Display Bold" ;
+	position: absolute;
+	top: 88px;
+	left: 71px;
+	color: #ACACAC;
+}
+.search-master li .yuan1{
+	width: 10px;
+	height: 10px;
+	background: #21FFB8;
+	border-radius: 50%;
+	position: absolute;
+	bottom: 10px;
+	left: 72px;
+}
+.search-master li .m7{
+	font-size: 10px;
+	font-family:"San Francisco Display Bold" ;
+	position: absolute;
+	bottom: 10px;
+	left: 84px;
+	color: #7CB7FA;
+}
+.search-master li .m8{
+	font-size: 10px;
+	font-family:"苹方" ;
+	position: absolute;
+	bottom: 10px;
+	left: 118px;
+	color: #6E6E6E;
+}
+.search-master li .yuan2{
+	width: 10px;
+	height: 10px;
+	background: #2189FF;
+	border-radius: 50%;
+	position: absolute;
+	bottom: 10px;
+	right:143px;
+}
+.search-master li .m9{
+	font-size: 10px;
+	font-family:"San Francisco Display Bold" ;
+	position: absolute;
+	bottom: 8px;
+	right: 100px;
+	color: #7CB7FA;
+}
+.search-master li .m10{
+	font-size: 10px;
+	font-family:"苹方" ;
+	position: absolute;
+	bottom: 8px;
+	right:  47px;
+	color: #6E6E6E;
+}
+.search-master li .dong{
+	position: absolute;
+	left: 0px;
+	top: -36px;
+	width: 100%;
+	height: 100%;
 }
 /*底部固定定位*/
 .search-don{

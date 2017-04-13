@@ -1,9 +1,14 @@
+body{
+
+	overflow:auto;
+}
 header{
 	width: 7.5rem;
 	height: 2.13rem;
 	background: url('../img/n-bg.png')
 }
 header>.top{
+/*	position: fixed;*/
 	width:100%;
 	height:1.09rem;
 	padding-top:.20rem;
@@ -23,13 +28,15 @@ header>.top>.rg{
 	width:1.12rem;
 	float: right;
 }
-header>.top>div>img{
+header>.top>div>a>img,header>.top>div>img{
 	width: .88rem
 }
-header>.top>.rg>img{
+header>.top>.rg>a>img{
     width: 1rem
 }
 header>.bottom{
+	/*position: fixed;
+	top:1.09rem;*/
 	width: 2.58rem;
 	height: .68rem;
 	margin-left:2.46rem;
@@ -39,7 +46,7 @@ header>.bottom{
 	padding: 0.08rem;
 	color: #ccc
 }
-header>.bottom>.baby{
+header>.bottom>a>.baby{
 	display: inline-block;
 	width: 1.40rem;
 	height: .51rem;
@@ -49,20 +56,20 @@ header>.bottom>.baby{
     text-align: center;
 	line-height: .51rem;
 	margin-top: .03rem;
-	margin-right: .3rem
 }
-header>.bottom>.design{
+header>.bottom>a>.design{
 	display: inline-block;
 	height: .51rem;
+	color: #fff;
 }
-header>.bottom>.design>span{
+header>.bottom>a>.design>span{
 	display: inline-block;
 	width: .05rem;
 	height: .05rem;
 	border-radius: 50%;
 	background: #fff;
 }
-header>.bottom>.baby>span{
+header>.bottom>a>.baby>span{
 	display: inline-block;
     width: .05rem;
 	height: .05rem;
@@ -70,6 +77,7 @@ header>.bottom>.baby>span{
 	text-align: center;
 	line-height: .04rem;
 	transform:rotate(45deg);
+	color: #fff;
 }
 .chose{
    width: 100%;
@@ -133,22 +141,29 @@ header>.bottom>.baby>span{
     height: .55rem;
 	background: #fff;
 	border-radius: 50%;
+	text-align: center;
+	line-height: .55rem;
 }
 .chose>ul>li>.dingwei>.talk>div>img{
 	width: .50rem;
-	background: #fff;
+	border-radius: 50%
 }
 .chose>ul>li>.dingwei>.talk>span{
 	float: left;
 	width: .86rem;
 	height:50%;
-	line-height:.5rem;
+	line-height:.7rem;
 	padding-left:.07rem;
+	color: #666;
+}
+.chose>ul>li>.dingwei>.talk>span:last-child{
+	line-height:.3rem;
 	color: #333;
 }
 /*.chose>ul>li>.dingwei>.talk>span:first-child{
 	color: #aaa;
 }*/
+/*四个图标*/
 section{
 	width: 100%;
 	height: 1.85rem;
@@ -163,6 +178,7 @@ section>.icon{
 section>.icon>a>img{
 	width: 1.02rem;
 }
+/*标题1*/
 .title{
 	width: 100%;
 	height: 1.28rem;
@@ -172,4 +188,185 @@ section>.icon>a>img{
 .title>img{
 	width: 1.90rem;
 	margin:.2rem 0 0 .38rem;
+}
+/*标题2*/
+.title2{
+	margin-top: .5rem;
+	width: 7.5rem;
+	height: 3.98rem;
+	background: url(../img/n-bbg.png);
+	background-size:100%;
+	background-clip: border-box;
+}
+
+.title2>.left{
+	float: left;
+	width: 2.61rem;
+}
+.title2>.left>a>img,.title2>.left>a{
+    width: 2.61rem;
+    display: block;
+}
+.title2>.right{
+	width: 3.6rem;
+    padding-top: 1.04rem;
+    float: left;
+    height: 2.94rem
+}
+.title2>.right>.cloud,.title2>.right>.cloud>img{
+	height: .64rem;
+}
+.title2>.right>.cloud>div{
+	display: inline-block;
+	width: 1.06rem;
+	height: .64rem;
+}
+.title2>.right>.cloud>div>img{
+	text-align: center;
+}
+/*作品展示开始*/
+.special{
+	width: 100%;
+	height: 3.42rem;
+	margin-top: .7rem
+}
+.special>.box{
+	width: 2.32rem;
+	height: 1.49rem;
+	padding-top:1.8rem;
+	float: left;
+	margin-left: .2rem
+}
+.special>.box1{
+	background: url('../img/n-diaodeng.png');
+	background-size: 100%
+}
+.special>.box2{
+	background: url('../img/n-zy.png');
+	background-size: 100%;
+	margin-left: .09rem
+}
+.special>.box3{
+	background: url('../img/n-chaoxie.png');
+	background-size: 100%;
+	margin-left: .09rem
+}
+.special>.box>.star{
+	padding-left: .26rem
+}
+.special>.box>h5{
+	padding: .03rem 0 0 .6rem;
+	font-size: .24rem;
+	color: #444;
+}
+.special>.box>pre{
+	padding: .1rem 0 0 0.24rem;
+	font-size: .20rem;
+	color: #444;
+}
+/*设计师展示开始*/
+.designer{
+	width: 7.18rem;
+	height: 2.28rem;
+	margin: 0.6rem auto;
+	background: url('../img/n-dbg.png');
+	background-size: 100%;
+}
+.designer>.left{
+	width: 1.14rem;
+	height: 100%;
+	float: left;
+	padding-left: .2rem;
+}
+.designer>.left>.touxiang{
+	margin:.3rem 0  0 .09rem;
+	width: 1.14rem;
+	height: 1.14rem;
+	text-align: center;
+	background: url('../img/n-tou1.png');
+	background-size: 100%;
+}
+.designer>.left>.tx{
+	background: url('../img/n-tou2.png');
+	background-size: 100%;
+}
+.designer>.left>span{
+	display:inline-block;
+	margin-left: .35rem;
+	width: .55rem;
+	height: .02rem;
+	background: #FF8197;
+}
+.designer>.left>.heart{
+	height: .2rem;
+	margin-left: .14rem;
+	text-align: center;
+}
+.designer>.left>.heart>img{
+	height: .2rem
+}
+.designer>.right{
+	width: 5.09rem;
+	float: left;
+	padding:.15rem 0 0 .5rem;
+	position: relative;
+}
+.designer>.right>div{
+     height: .64rem
+}
+.designer>.right>.hot{
+	position: absolute;
+	top:-.06rem;
+	right: -.1rem;
+	width: .68rem;
+	height: .74rem;
+}
+.designer>.right>.hot>img{
+	width: 100%
+}
+.designer>.right>.t>h3{
+	font-size: .24rem;
+	color: #333
+}
+.designer>.right>.t>p{
+	font-size: .12rem;
+	color: #aaa;
+}
+.designer>.right>.m>h4{
+	font-size: .14rem;
+	color: #aaa;
+	font-weight: 400
+}
+.designer>.right>.b>h5{
+	padding-left: .3rem;
+	font-size: .04rem;
+	color: #aaa;
+	font-weight: 400
+}
+.don{
+	width: 100%;
+	height: .88rem;
+	background: #323840;
+	position: fixed;
+	bottom:0 ;
+	left: 0;
+}
+.don >ul{
+	width: 100%;
+	height: .88rem;
+	float: left;
+	display: block;
+}
+.don> ul> li {
+	display: block;
+	width: 18%;
+	text-align: center;
+	float: left;
+	margin: 0 1%;
+	height: 100%;
+}
+.don >ul >li img{
+	width: .88rem;
+	height: .9rem;
+	margin-bottom: .07rem;
 }

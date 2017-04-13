@@ -1,18 +1,19 @@
-body{
+body.crgrzx{
 	background:#fff;
+	overflow:auto;
 }
 div.head{
 	width:100%;
 	height:2.1rem;
 	margin:0 auto;
-	background-image:url(../img/home/1首页_02.png);
+	background-image:url(../img/cr-bg1.png);
 	position:relative;
 }
 .head .line{
 	width:7.02rem;
 	height:0.1rem;
 	margin:0 auto;
-	background-image:url(../img/image/login/32登录_03.png);
+	background-image:url(../img/cr-top1.png);
 	background-position:center;
 	background-size:100%;
 	background-repeat:no-repeat;
@@ -40,7 +41,7 @@ div.head{
 	width:1.56rem;
 	height:1.56rem;
 	border-radius:50%;
-	background-image:url(../img/image/personal/personal_12.png);
+	background-image:url(../img/cr-grzxtx1.png);
 	background-position:center;
 	background-size:100%;
 	background-repeat:no-repeat;
@@ -53,7 +54,9 @@ div.head{
 .head > .circle >.pic{
 	width:1.15rem;
 	height:1.15rem;
-	background:red;
+	background-image:url(../img/cr-tpic.jpg);
+	background-size:100%;
+	background-position:center;
 	border-radius:50%;
 	margin:0.2rem auto;
 }
@@ -91,15 +94,6 @@ div.font div.font1 span{
 }
 div.font .font1 img{
 	height:0.24rem;
-}
-div.font div.line{
-	margin-top:0.15rem;
-	width:100%;
-	height:0.1rem;
-	background-image:url(../img/image/personal/personal_19.png);
-	background-position:center;
-	background-repeat:no-repeat;
-	background-size:5%;
 }
 div.font div.star{
 	margin-top:0.15rem;
@@ -203,10 +197,27 @@ div.list >div.toux{
 	border-radius:50%;
 	margin-top:0.15rem;
 	margin-left:0.15rem;
-	background-image:url(../img/image/personal/personal_59.png);
+	background-image:url(../img/cr-grzxtx2.png);
 	background-position:center;
 	background-repeat:no-repeat;
 	background-size:100%;
+	position:relative;
+}
+div.list >div.toux >div.cir{
+	width:0.80rem;
+	height:0.80rem;
+	border-radius:50%;
+	background-image:url(../img/cr-tpic2.png);
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:100%;
+	position:absolute;
+	top:0.1rem;
+	left:0.1rem;
+}
+div.two >div.toux >div.cir{
+	background-image:url(../img/cr-tpic3.jpg);
+	background-size:150%;
 }
 div.list >div.line1{
 	float:left;
@@ -239,7 +250,7 @@ div.list >div.line2{
 	float:left;
 	margin-left:0.10rem;
 	margin-top:0.02rem;
-	background-image:url(../img/image/personal/personal_70.png);
+	background-image:url(../img/cr-nameline.png);
 	background-position:center;
 	background-repeat:no-repeat;
 	background-size:100%;
@@ -268,4 +279,33 @@ div.list >img{
 	height:0.5rem;
 	margin-top:0.4rem;
 	margin-right:0.15rem;
+}
+
+
+.don{
+	width: 100%;
+	height: .88rem;
+	background: #323840;
+	position:fixed;
+	bottom:0 ;
+	left: 0;
+}
+.don ul{
+	width: 100%;
+	height: .88rem;
+	float: left;
+	display: block;
+}
+.don ul li {
+	display: block;
+	width: 18%;
+	text-align: center;
+	float: left;
+	margin: 0 1%;
+	height: 100%;
+}
+.don ul li img{
+	width: .88rem;
+	height: .9rem;
+	margin-bottom: .07rem;
 }

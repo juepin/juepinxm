@@ -6,7 +6,7 @@
 	height:auto;
 	float: left;
 	position: fixed;
-	background-image: url(../img/home/1首页_02.png);
+	background-image: url(../img/n-bg.png);
 }
 .header .leimu1{
 	width: 100%;
@@ -24,34 +24,36 @@
 	height: .8rem;
 	float: left;
 	margin-left: .4rem;
-	margin-top: 1rem;
+	margin-top: .45rem;
 	display: inline-block;
-	background-image: url(../img/home/1首页_05.png);
-	background-position: 114px 119px;
+	background-image: url(../img/n-menu.png);
+	background-position: -18px -14px;
 	background-size: 66px;
-
+	background-repeat: no-repeat;
 }
 .header .leimu1 div:nth-child(2){
 	width: 1.06rem;
 	height: .9rem;
 	float: left;
 	margin-left: 2rem;
-	margin-top: 1rem;
+	margin-top: .45rem;
 	display: inline-block;
-	background-image: url(../img/home/1首页_05_05.png);
-	background-position: 126px 147px;
+	background-image: url(../img/n-title.png);
+	background-position: -4px 0px;
 	background-size: 66px;
+	background-repeat: no-repeat;
 }
 .header .leimu1 div:last-child{
 	width: 1.4rem;
 	height: .8rem;
 	float: right;
 	margin-right: .4rem;
-	margin-top: 1rem;
+	margin-top: .45rem;
 	display: inline-block;
-	background-image: url(../img/home/1首页_08.png);
-	background-position: 86px 118px;
+	background-image: url(../img/n-search.png);
+	background-position: -3px -14px;
 	background-size: 90px;
+	background-repeat: no-repeat;
 }
 .header .leimu2{
 	width: 100%;
@@ -63,10 +65,11 @@
 	height: 1rem;
 	margin: 0 auto;
 	margin-bottom: .3rem;
-	background-image: url(../img/home/1首页_12.png);
-	background-position: -2px 105px;
+	background-image: url(../img/n-chose.png);
+	background-position: -2px 1px;
 	background-size: 196px;
 	position: relative;
+	background-repeat: no-repeat;
 }
 .header .leimu2 .kuang .baby{
 	width: 2rem;
