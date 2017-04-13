@@ -1,0 +1,53 @@
+body.spgz{
+    background:#fff;
+    overflow:auto;
+}
+div.head{
+    width:100%;
+    height:1.20rem;
+    margin:0 auto;
+    background-image:url(../img/cr-bg1.png);
+    position:relative;
+}
+.head .line{
+    width:7.02rem;
+    height:0.1rem;
+    margin:0 auto;
+
+    background-image:url(../img/cr-top1.png);
+    background-position:center;
+    background-size:100%;
+    background-repeat:no-repeat;
+}
+.head .top{    
+    padding-top:0.11rem;
+    box-sizing:border-box;
+    width:7.02rem;
+    height:0.88rem;
+    margin:0 auto;
+}
+.head .top a{
+    float:left;
+}
+.head .top a img{
+    display:block;
+    height:0.66rem;
+}
+.head .top a:first-child img{
+   width:0.66rem;
+   height:auto;
+   margin-top:0.10rem;
+}
+.head .top a:nth-child(2){
+    margin-left:1.70rem;
+}
+.head .top a:nth-child(3){
+    float:right;
+}
+
+
+div.list{
+    width:7.02rem;
+    height:auto;
+    background:#fff;
+}

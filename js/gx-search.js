@@ -6,4 +6,5 @@ $(function(){
 	dian.click(function(){
 		$(this).parent().next(".xiala").eq($(this).index()).css("display","block");
 	})
+
 })
