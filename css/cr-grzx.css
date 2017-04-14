@@ -126,36 +126,41 @@ div.four div.gray{
 	background:#f5f5f5;
 
 }
-div.four div.gray >div{
+div.four div.gray >a{
 	width:50%;
 	height:50%;
 	float:left;
 }
-div.four div.gray >div > img{
+div.four div.gray >a >div{
+	width:100%;
+	height:100%;
+	float:left;
+}
+div.four div.gray >a>div > img{
 	width:0.6rem;
 	float:left;
 	margin-top:0.3rem;
 	margin-left:0.15rem;
 }
-div.four div.gray >div > p{
+div.four div.gray >a>div > p{
 	float:left;
 	height:30%;
 	width:50%;
 	margin-left:0.10rem;
 }
-div.four div.gray >div > p:nth-of-type(1){
+div.four div.gray >a>div > p:nth-of-type(1){
 	font-size:0.22rem;
 	margin-top:0.25rem;
 	color:#3292CF;
 }
-div.four div.gray >div > div{
+div.four div.gray>a >div > div{
 	width:1.60rem;
 	height:0;
 	float:left;
 	border-bottom:0.01rem solid #c4c4c4;
 	margin-left:0.10rem;
 }
-div.four div.gray >div > p:nth-of-type(2){
+div.four div.gray >a>div > p:nth-of-type(2){
 	font-size:12px;
 	color:#BEBEBE;
 	margin-top:0.02rem;
@@ -172,6 +177,57 @@ div.four div.gray >p.bcircle{
 	background:#33ECA9;
 }
 
+/*money*/
+div.money{
+	width:7.02rem;
+	height:1.48rem;
+	margin:0.2rem auto 0.1rem;
+	background:#33ECA9;
+	position:relative;
+}
+div.money div.gray{
+	width:100%;
+	height:1.38rem;
+	background:#f5f5f5;
+}
+div.money div.gray > a{
+	float:left;
+	width:20%;
+	height:100%;
+}
+div.money div.gray > a:nth-child(5){
+	border-left:1px solid #D4D4D4;
+	box-sizing:border-box;
+}
+div.money div.gray > a >p:first-child{
+	width:100%;
+	height:50%;
+	font-size:0.18rem;
+	line-height:0.69rem;
+	color:#333;
+	text-align:center;
+}
+div.money div.gray > a >p:nth-child(2){
+	width:100%;
+	height:30%;
+	font-size:0.20rem;
+	line-height:0.41rem;
+	color:#333;
+	text-align:center;
+}
+div.money div.gray >p.bcircle{
+	width:0.3rem;
+	height:0.3rem;
+	border-radius:50%;
+	background:red;
+	position:absolute;
+	left:50%;
+	margin-left:-0.15rem;
+	bottom:0;
+	background:#33ECA9;
+}
+
+
 
 div.suggest{
 	width:7.02rem;
@@ -182,8 +238,50 @@ div.suggest >img{
 	height:100%;
 }
 
+/*图文*/
+.special{
+	width: 100%;
+	height: 3.42rem;
+	margin-top: 0.25rem;
+	margin-bottom:0.4rem;
+}
+.special>.box{
+	width: 2.32rem;
+	height: 1.49rem;
+	padding-top:1.8rem;
+	float: left;
+	margin-left: .2rem
+}
+.special>.box1{
+	background: url('../img/n-diaodeng.png');
+	background-size: 100%
+}
+.special>.box2{
+	background: url('../img/n-zy.png');
+	background-size: 100%;
+	margin-left: .09rem
+}
+.special>.box3{
+	background: url('../img/n-chaoxie.png');
+	background-size: 100%;
+	margin-left: .09rem
+}
+.special>.box>.star{
+	padding-left: .26rem
+}
+.special>.box>h5{
+	padding: .03rem 0 0 .6rem;
+	font-size: .24rem;
+	color: #444;
+}
+.special>.box>pre{
+	padding: .1rem 0 0 0.24rem;
+	font-size: .20rem;
+	color: #444;
+}
 
-div.list{
+
+/*div.list{
 	width:7.02rem;
 	height:1.3rem;
 	margin:0 auto 0.15rem;
@@ -279,16 +377,17 @@ div.list >img{
 	height:0.5rem;
 	margin-top:0.4rem;
 	margin-right:0.15rem;
-}
+}*/
 
 
 .don{
 	width: 100%;
 	height: .88rem;
 	background: #323840;
-	position:fixed;
+	position:absolute;
 	bottom:0 ;
 	left: 0;
+	overflow:hidden;
 }
 .don ul{
 	width: 100%;

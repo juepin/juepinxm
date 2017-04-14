@@ -8,7 +8,7 @@ $(function(){
 			},
 			pass:{
                 required:true,
-             	rangelength:[1,12]
+             	rangelength:[6,12]
             },
 		},
 		message:{
@@ -17,6 +17,18 @@ $(function(){
 				required:"请输入密码",
 				minlength:$.validator.format("密码不能小于{0}个字符")
 			},
+		},
+		errorElement:"div",
+		errorPlacement:function(error,val){
+			if($("b").next('b')){
+				error.css("color","red").insertBefore(val.parent());
+			}
+		},
+		success:function(success,val){
+			if($(val).next('i').length==0){
+				$("<i>").css({"width":"10px","height":"10px","borderRadius":"50%","background":"red"}).insertBefore(val);
+			}
+			console.log($("i"));
 		}
 	}
 	)
@@ -26,6 +38,7 @@ $(function(){
 })
 $.validator.setDefaults({
 	submitHandler:function(){
-		alert("已提交");
+		alert("登录成功");
+
 	}
 })

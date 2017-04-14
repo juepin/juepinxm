@@ -3,9 +3,7 @@
  */
 var swiper = new Swiper('.swiper-container', {
     pagination: '.swiper-pagination',
-    // paginationClickable: true,
-    spaceBetween: -1,
-    centeredSlides: true,
-    autoplayDisableOnInteraction: false,
-    loop:false,
+    paginationClickable: true,
+    parallax: true,
+    speed: 600,
 });

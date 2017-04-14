@@ -1,7 +1,7 @@
 @import url("common.css");
 
 body{
-	background: url("../img/zjj-bg.png");
+	background: url("../img/zjj-bg.png") no-repeat;
 	background-size:cover;
 }
 *{

@@ -1,9 +1,9 @@
 $(function(){
 	let dian=$(".search-sousuo input")
-	dian.click(function(){
-		$(this).parent().next(".xiala").eq($(this).index()).css("display","none");
-	})
-	dian.click(function(){
+	dian.focus(function(){
 		$(this).parent().next(".xiala").eq($(this).index()).css("display","block");
+	})
+	dian.blur(function(){
+		$(this).parent().next(".xiala").eq($(this).index()).css("display","none");
 	})
 })
