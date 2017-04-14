@@ -1,0 +1,177 @@
+*{
+	font-family: "San Francisco Displa";
+}
+/*body{
+	background: #FFFFFF;
+}*/
+header{
+	width: 100%;
+	height: 2.98rem;
+	background-image: url(../img/xx-care_01.png);
+	background-size: 100%;
+	/*overflow: hidden;*/
+	position: relative;
+}
+header > a{
+	width: .81rem;
+	height: .58rem;
+	display: block;
+	background-image: url(../img/xx-care_02.png);
+	background-size: 100%;
+	position: absolute;
+	left: 0;
+	top: .58rem;
+}
+header > div{
+	width: 7.02rem;
+	height: 3.91rem;
+	/*margin: 0 auto;*/
+	background: #2c82b8;
+	position: absolute;
+	left: .24rem;
+	top: 1.74rem;
+	border-radius: .08rem;
+}
+header > div >div:first-child{
+	width: 6.01rem;
+	height: 2.49rem;
+	background: rgba(255,255,255,.8);
+	position: absolute;
+	left: .53rem;
+	bottom: -.39rem;
+	border-radius: .08rem;
+	box-shadow: 0 0 .1rem .1rem rgba(0,0,0,.02);
+	z-index: 2;
+}
+header > div >div:nth-child(2){
+	width: 5.669rem;
+	height: 2.49rem;
+	background: #FFFFFF;
+	position: absolute;
+	left: .68rem;
+	bottom: -.57rem;
+	border-radius: .08rem;
+	box-shadow: 0 0 .1rem .1rem rgba(0,0,0,.02);
+	z-index: 1;
+}
+.banner{
+	width: 6.42rem;
+	height: 4.38rem;
+	background-image: linear-gradient(#ffffff 98.5%,#4f5359 1.5%);
+	position: absolute;
+	left: .28rem;
+	bottom: -.24rem;
+	border-radius: .08rem;
+	box-shadow: 0 0 .1rem .1rem rgba(0,0,0,.02);
+	z-index: 3;
+}
+.banner > div > div{
+	width: 1.76rem;
+	height: .58rem;
+	padding-left: .22rem;
+	padding-top: .2rem;
+	float: left;
+}
+.banner span:first-child{
+	color: #80dda8;
+	font-size: .2rem;
+	font-weight: bold;
+}
+.banner span:nth-child(2){
+	color: #a3a3a3;
+	font-size: .2rem;
+	font-weight: bold;
+}
+.banner span + img{
+	width: 1.53rem;
+	display: block;
+	margin-left: -.12rem;
+}
+.banner span:nth-child(3){
+	color: #dbdbdb;
+	font-size: .2rem;
+}
+.banner > img:first-of-type{
+	width: 1.40rem;
+	display: block;
+	float: right;
+}
+.banner > img:nth-of-type(2){
+	position: absolute;
+	left: 1.58rem;
+	top: .22rem;
+	width: 3.3rem;
+}
+.banner > img:nth-of-type(2) +a{
+	position: absolute;
+	left: .23rem;
+	bottom: .28rem;
+	width: 1.03rem;
+	height: .45rem;
+	background-image: url(../img/xx-care06.png);
+	background-size: 100%;
+}
+section{
+	width: 100%;
+	height: auto;
+	box-sizing: border-box;
+	padding: 0.35rem;
+	margin-top: 3.4rem;
+}
+section > p:first-of-type{
+	width: auto;
+	height: ;
+	/*text-transform: uppercase;*/
+	color: #525252;
+}
+section > p:first-of-type > span:first-of-type{
+	font-size: .3rem;
+	font-weight: bold;
+}
+section > p:first-of-type > span:nth-of-type(2){
+	font-size: .3rem;
+	font-weight: 500;
+	margin-left: .1rem;
+}
+section > p:first-of-type > span:nth-of-type(3){
+	font-size: .26rem;
+	font-weight: bold;
+	font-family: '苹方';
+	display: block;
+	float: right;
+	margin-right: 2.6rem;
+	margin-top: .02rem;
+}
+section > p:nth-of-type(2) > img{
+	width: .32rem;
+	display: block;
+	float: left;
+}
+section > p:nth-of-type(2) > span:first-of-type{
+	font-size: .22rem;
+	font-weight: 500;
+	display: block;
+	float: left;
+	margin-right: .2rem;
+	color: #5e5c5c;
+}
+section > p:nth-of-type(2) > span:nth-of-type(2){
+	color: #5e5c5c;
+}
+section >div{
+	width: 50%;
+	height: .03rem;
+	background: #cbcbcb;
+	margin-top: .16rem;
+}
+section > p:nth-of-type(3){
+	font-size: .22rem;
+	font-weight: 500;
+	color: #575555;
+	margin-top: .22rem;
+	font-family: '苹方';
+}
+section > p:nth-of-type(4){
+	margin-top: .3rem;
+	color: #d6d6d6;
+}
