@@ -24,6 +24,10 @@ header .top .line {
   height: 0.03rem;
 }
 
+header > .top > div > a:first-child {
+  margin-left: 0.068rem;
+}
+
 header > .bottom {
   background-image: url("../img/creat/md_52_03.png");
   height: 0.72rem;
