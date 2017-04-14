@@ -1,7 +1,201 @@
-.header .leimu1 div:nth-child(2) {
-  background-image: url(../img/creat/md_03.png);
+body {
+  background-color: #fff;
+  overflow: auto;
+  height: 2000px;
+}
+
+header .top {
+  position: relative;
+}
+
+header .top .md {
+  padding-left: 2rem;
+}
+
+header .top .md img {
   width: 1.92rem;
   height: 0.88rem;
-  margin-left: 1.75rem;
+}
+
+header .top .line {
+  position: absolute;
+  top: 0.2rem;
+  width: 7.2rem;
+  left: 0.15rem;
+  height: 0.03rem;
+}
+
+.title {
+  background-color: #fff;
+}
+
+.design {
+  width: 100%;
+  margin-top: 2.4rem;
+}
+
+.design .title {
+  width: 100%;
+}
+
+.design .title img {
+  margin-left: 0;
+  width: 1.84rem;
+  height: 0.84rem;
+}
+
+.design .per {
+  margin-top: 0.1rem;
+  width: 100%;
+}
+
+.design .per ul {
+  width: 100%;
+  padding: 0 0.24rem;
+  height: 3.2rem;
+  box-sizing: border-box;
+  background-image: url("../img/creat/md_49.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 0 1.6rem;
+}
+
+.design .per ul li {
+  float: left;
+  width: 33.333333%;
+  height: 3.2rem;
+}
+
+.design .per ul li .bg {
+  background-image: url("../img/creat/cr-grzxtx1.png");
   background-size: cover;
+  width: 1.6rem;
+  height: 1.6rem;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.design .per ul li .bg .tx {
+  width: 1.1rem;
+  height: 1.1rem;
+  border-radius: 50%;
+  background-color: #00c0a5;
+  margin-left: 0.32rem;
+  margin-top: 0.28rem;
+}
+
+.design .inf {
+  text-align: center;
+}
+
+.design .inf h6 {
+  color: #818181;
+  font-size: 0.24rem;
+  font-weight: 400;
+}
+
+.design .inf p {
+  margin-top: 0.05rem;
+  color: #b1b1b1;
+  font-size: 0.2rem;
+  text-transform: capitalize;
+  margin-bottom: -0.1rem;
+}
+
+.design .inf img {
+  margin-top: -0.1rem;
+  width: 0.24rem;
+  height: 0.04rem;
+}
+
+.design .inf .str {
+  width: 100%;
+  margin-top: 0.05rem;
+}
+
+.design .inf .str .sta {
+  width: 0.28rem;
+  height: 0.28rem;
+}
+
+.design .per ul .star .bg {
+  margin-top: -0.48rem;
+  background-image: url("../img/creat/cr-grzxtx1.png");
+  width: 2.1rem;
+  height: 2.1rem;
+  position: relative;
+}
+
+.design .per ul .star .bg .tx {
+  width: 1.48rem;
+  height: 1.48rem;
+  margin-left: 0.42rem;
+  margin-top: 0.36rem;
+}
+
+.design .per ul .star .bg img {
+  position: absolute;
+  top: 0.18rem;
+  margin-left: 0.36rem;
+  width: 0.6rem;
+  z-index: 20;
+}
+
+.design .per ul .star .inf h6 {
+  margin-top: -0.05rem;
+  font-size: 0.26rem;
+}
+
+.design .per ul .star .inf .str .sta {
+  width: 0.36rem;
+  height: 0.36rem;
+}
+
+.select {
+  width: 100%;
+}
+
+.select .title {
+  width: 100%;
+}
+
+.select .title img {
+  margin-left: 0;
+  width: 7.5rem;
+  height: 0.84rem;
+}
+
+.select .sel {
+  width: 100%;
+  height: 2.2rem;
+}
+
+.select .sel ul {
+  margin-top: 0.1rem;
+  padding: 0 0.2rem;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.select .sel ul li {
+  width: 25%;
+  float: left;
+  text-align: center;
+}
+
+.select .sel ul li img {
+  width: 1.14rem;
+  height: 1.14rem;
+}
+
+.select .sel ul li h6 {
+  color: #818181;
+  font-size: 0.26rem;
+  font-weight: normal;
+}
+
+.select .sel ul li p {
+  margin-top: 0.05rem;
+  color: #cacaca;
+  font-size: 0.24rem;
 }
