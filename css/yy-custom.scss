@@ -2,14 +2,13 @@
 body{
   background-color:#fff;
   overflow: auto;
-  height:2000px;
 }
 header{
   .top{
     position: relative;
     .md{
       padding:{
-        left:2rem;
+        left:1.94rem;
       }
       img{
         width:1.92rem;
@@ -25,10 +24,48 @@ header{
     }
   }
 }
+header>.bottom{
+  background-image:url("../img/creat/md_52_03.png");
+  height:0.72rem;
+  margin:0 auto;
+  margin-top:-0.1rem;
+  .left{
+    float: left;
+    background-image:url("../img/creat/md_53_03.png");
+    width:1.38rem;
+    height:0.48rem;
+    background-size:100%;
+    margin-top:0.06rem;
+    margin-left:0.01rem;
+    line-height:0.48rem;
+    span{
+      font-size:0.24rem;
+      font-weight:normal;
+    }
+    span:first-child{
+      margin-left:-0.01rem;
+    }
+    span:last-child{
+      margin-left:0.16rem;
+    }
+  }
+  .right{
+    height:0.6rem;
+    float: right;
+    line-height:0.6rem;
+    margin-right:0.32rem;
+    span{
+      font-size:0.24rem;
+      font-weight:normal;
+      color:#808588;
+    }
+  }
+}
 //设计师选择
 $mar:0 auto;
 $colorh:#818181;
 $colorp:#b1b1b1;
+$margin:0.8rem;
 .title{
   background-color: #fff;
 }
@@ -109,6 +146,8 @@ $colorp:#b1b1b1;
       .sta{
         width:0.28rem;
         height:0.28rem;
+        margin-left:-0.04rem;
+        margin-right:-0.04rem;
       }
     }
   }
@@ -155,6 +194,19 @@ $colorp:#b1b1b1;
     }
   }
 }
+.design .per ul li:first-child .bg .tx{
+  background-image:url("../img/creat/tx.jpg");
+  background-size:cover;
+  background-position:-0.26rem 0;
+}
+.design .per ul li:nth-child(2) .bg .tx{
+  background-image:url("../img/creat/tx2.jpg");
+  background-size:cover;
+}
+.design .per ul li:last-child .bg .tx{
+  background-image:url("../img/creat/tx3.jpg");
+  background-size:cover;
+}
 //项目选择
 $colorh1:#818181;
 $colorp1:#cacaca;
@@ -195,6 +247,179 @@ $colorp1:#cacaca;
           font-size:0.24rem;
         }
       }
+    }
+  }
+}
+.select .sel ul li:last-child h6{
+  color:rgba(129,129,129,0.5)
+}
+.select .sel ul li:last-child p{
+  color:rgba(129,129,129,0.5)
+
+}
+//尺寸选择
+.size {
+  width: 100%;
+  .title {
+    width: 100%;
+    img {
+      margin-left: 0;
+      width: 7.5rem;
+      height: 0.84rem;
+    }
+  }
+}
+.size{
+  .selc{
+    width:100%;
+    ul{
+      padding:0 0.8rem;
+      box-sizing: border-box;
+      margin-top:0.64rem;
+      width:100%;
+    }
+  }
+}
+.size .selc ul{
+  li{
+      float: left;
+      width:25%;
+    p{
+      margin:0 auto;
+      margin-top:-0.6rem;
+      width:1.08rem;
+      height:0.6rem;
+      border-radius:0.4rem;
+      background-color:#f8f8f8;
+      border:2px solid rgba(134,134,134,0.3);
+      text-align: center;
+      line-height:0.6rem;
+      color:#6c6c6c;
+      font-size:0.26rem;
+    }
+  }
+}
+.size .selc ul .act p{
+  background-color:#3e4651;
+  color:#f8f8f8;
+}
+.size .selc img{
+  width:7.5rem;
+  height:1.02rem;
+  margin-top:0.1rem;
+}
+.size .selc .add{
+  width:100%;
+  padding:0 0.8rem;
+  box-sizing: border-box;
+}
+@mixin bord{
+  width:0.46rem;
+  height:0.46rem;
+  border-radius:50%;
+  border:2px solid #e5e5e5;
+  text-align: center;
+  line-height:0.44rem;
+  font-size:0.3rem;
+  margin-top:0.05rem;
+  //font-weight:bold;
+}
+.size .selc .add{
+  //overflow: hidden;
+  .lef{
+    float: left;
+    width:25%;
+    p{
+      float: right;
+      @include bord;
+      color:#fff;
+      background-color:#3e4651;
+    }
+  }
+  .mid{
+    float: left;
+    width:50%;
+    p{
+      margin:$mar;
+      margin-top:-0.1rem;
+      width:1.9rem;
+      height:0.92rem;
+      background-image:url("../img/creat/md_27.png");
+      background-size:100%;
+      line-height:0.92rem;
+      text-align: center;
+      font-size:0.28rem;
+      color:#6c6c6c;
+      font-weight:bold;
+    }
+  }
+  .righ{
+    float: left;
+    width:25%;
+    p{
+      @include bord;
+      color:#747474;
+      background-color:#fff;
+    }
+  }
+}
+//设计原料
+.origin{
+  margin-top:1.4rem;
+  width:100%;
+  .bac{
+    margin:0 auto;
+    width:6.98rem;
+    height:2.8rem;
+    border-radius:4px;
+    box-shadow:0 0.02rem 0.16rem rgba(0,0,0,0.2);
+    .title{
+      width:100%;
+      height:1rem;
+      text-align: center;
+      line-height:0.2rem;
+      h6{
+        line-height:0.6rem;
+        color:#6e6e6e;
+        font-size:0.26rem;
+      }
+      p{
+        font-size:0.2rem;
+        color:#6e6e6e;
+      }
+    }
+    ul{
+      width:100%;
+      display: flex;
+      justify-content: space-around;
+      li{
+        width:33.3333%;
+        text-align: center;
+        img{
+          width:1.36rem;
+          height:1.36rem;
+        }
+      }
+    }
+    .bot{
+      width:100%;
+      height:0.06rem;
+      margin-top:0.34rem;
+      border-radius:0 0 4px 4px;
+      background-color:#6ac2ff;
+    }
+  }
+}
+.ask{
+  width:100%;
+  text-align: center;
+  margin-bottom:1rem;
+  a{
+    display: block;
+    img{
+      margin-top:$margin;
+      width:3.36rem;
+      height:1.48rem;
     }
   }
 }
