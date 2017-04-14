@@ -24,8 +24,8 @@ body{
     display: inline-block;
 }
 .header .leimu1 div:first-child{
-	width: .6rem;
-	height: .6rem;
+	width: .7rem;
+	height: .7rem;
 	float: left;
 	margin-left: .4rem;
 	margin-top: .58rem;
@@ -44,15 +44,10 @@ body{
 	margin-top: .45rem;
 	display: inline-block;
 	position: relative;
-	/*background-image: url(../img/n-title.png);
-	background-position: -4px 0px;
-	background-size: 66px;
-	background-repeat: no-repeat;*/
 }
 
 .header .leimu1 div:nth-child(2) P:first-child{
 	font-size:20px;
-	/*font-family: "苹方";*/
 	color: white;
 	display: block;
 	width: 2rem;
@@ -67,10 +62,8 @@ body{
 }
 .header .leimu1 div:nth-child(2) P:last-child{
 	font-size:12px;
-	/*text-align: center;*/
 	font-family: "San Francisco Display Bold";
 	color: white;
-	/*margin-top: 3px;*/
 	display: block;
 	width: 3rem;
 	height: .4rem;
@@ -90,6 +83,11 @@ body{
 	background-size: 77px;
 	background-repeat: no-repeat;
 }
+.header .leimu1 div:last-child a{
+	width: 1.4rem;
+	height: .8rem;
+	display: block;
+}
 .header .leimu2{
 	width: 100%;
 	height: auto;
@@ -106,37 +104,39 @@ body{
 	position: relative;
 	background-repeat: no-repeat;
 }
-.header > .leimu2 div.three {
+.header > .leimu2 .kuang .three {
   position: absolute;
   top: 0.16rem;
   left: 0.08rem;
   width: 1.4rem;
   height: 0.4rem;
-  border-radius: 0.2rem;
-  color: #eaeaea;
+color: #999595;
 }
 
-.header > .leimu2 div.active {
+.header > .leimu2 .kuang .active p{
   background: #3292CF;
+  width: 1.3rem;
+  height: 0.4rem;
+  border-radius: 0.2rem;
+  color: white;
 }
 
-.header > .leimu2 div.three:nth-of-type(2) {
-  left: 1.4rem;
-  top: 0.2rem;
+.header > .leimu2 .kuang .three:nth-of-type(2) {
+  left: 1.3rem;
+  /*top: 0.2rem;*/
   color: #999595;
 }
 
-.header > .leimu2 div.three:nth-of-type(3) {
+.header > .leimu2 .kuang .three:nth-of-type(3) {
   left: 2.4rem;
-  top: 0.2rem;
+  /*top: 0.2rem;*/
   color: #999595;
 }
 
-.header > .leimu2 div.three > p {
+.header > .leimu2 .kuang .three > p {
   height: 100%;
   text-align: center;
   line-height: 0.4rem;
-  /*color: #eaeaea;*/
   font-size: 0.2rem;
   font-family: "苹方";
 }
@@ -156,6 +156,7 @@ body{
 	margin: 0 10px;
 	float: left;
 	background: white;
+	position: relative;
 }
 .che-neirong .floor img{
 	width: 1.1rem;
@@ -165,7 +166,6 @@ body{
 	float: left;
 }
 .che-neirong .floor span{
-	/*margin-left: 20px;*/
 	float: left;
 	font-size: 16px;
 	margin-top: 15px;
@@ -175,37 +175,18 @@ body{
 	font-weight: bold;
 	margin-left: 10px;
 }
-.che-neirong .floor .xing1{
+.che-neirong .floor .xing{
 	width: 1.2rem;
 	height: .23rem;
 	background-image: url(../img/gx-xing.png);
 	background-size: 12px;
 	position: absolute;
-	left: 1.9rem;
+	left: 1.7rem;
 	top: .75rem;
-}
-.che-neirong .floor .xing2{
-	width: 1.2rem;
-	height: .23rem;
-	background-image: url(../img/gx-xing.png);
-	background-size: 12px;
-	position: absolute;
-	left: 1.9rem;
-	top: 2.6rem;
-}
-.che-neirong .floor .xing3{
-	width: 1.2rem;
-	height: .23rem;
-	background-image: url(../img/gx-xing.png);
-	background-size: 12px;
-	position: absolute;
-	left: 1.9rem;
-	top: 4.4rem;
 }
 .che-neirong .floor .biaoqian{
 	width: 4rem;
 	height: .5rem;
-	/*background: red;*/
 	margin-top: 60px;
 	margin-left: -133px;
 	float: left;
@@ -220,42 +201,22 @@ body{
 	text-align: center;
 	margin-right: .1rem;
 }
-.che-neirong .floor .flag1{
+.che-neirong .floor .flag{
 	width: 1.4rem;
 	height: .5rem;
 	background-image: url(../img/gx-flag.png);
 	background-repeat: no-repeat;
 	background-size:20px;
 	position: absolute;
-	right: 29px;
+	right: 20px;
 	top: 60px;
-}
-.che-neirong .floor .flag2{
-	width: 1.4rem;
-	height: .5rem;
-	background-image: url(../img/gx-flag.png);
-	background-repeat: no-repeat;
-	background-size:20px;
-	position: absolute;
-	right: 29px;
-	top: 150px;
-}
-.che-neirong .floor .flag3{
-	width: 1.4rem;
-	height: .5rem;
-	background-image: url(../img/gx-flag.png);
-	background-repeat: no-repeat;
-	background-size:20px;
-	position: absolute;
-	right: 29px;
-	top: 240px;
 }
 .che-neirong .floor .flag .Nub{
 	width: 1rem;
 	height: .4rem;
 	border-radius: 10px;
 	background: #F9F9F9;
-	margin-left: 30px;
+	margin-left: 25px;
 	font-size: 12px;
 	font-family: "苹方";
 	text-align: center;
@@ -271,22 +232,6 @@ body{
 	top: 10px;
 	font-weight: bold;
 }
-.che-neirong .floor  .two{
-	width: 2rem;
-	height: 1rem;
-	position: absolute;
-	right: 10px;
-	top: 104px;
-	font-weight: bold;
-}
-.che-neirong .floor  .three{
-	width: 2rem;
-	height: 1rem;
-	position: absolute;
-	right: 10px;
-	top: 195px;
-	font-weight: bold;
-}
 .che-neirong .floor .cost p{
 	position: absolute;
 	right: 10px;
@@ -299,37 +244,53 @@ body{
 	top: 25px;
 	font-size: 14px;
 }
-.che-neirong .ge1{
-	width: 95%;
+.che-neirong .floor .ge{
+	width: 100%;
 	position: absolute;
-	left: 10px;
-	top: 1.8rem;
-}
-.che-neirong .ge2{
-	width: 95%;
-	position: absolute;
-	left: 10px;
-	top:3.6rem;
-}
-.che-neirong .ge3{
-	width: 95%;
-	position: absolute;
-	left: 10px;
-	top: 5.4rem;
+	left: -20px;
+	bottom: 0rem;
+	z-index: 10
 }
 
 /*信息*/
 .che-news{
 	width: 96%;
 	height: auto;
-	position: absolute;
+	/*position: absolute;*/
 	top: 9rem;
-	font-family: "苹方";
+	/*font-family: "苹方";*/
 	text-align: right;
 	color: #99A0A9;
-	margin: 0px auto;
+	/*margin: 0px auto;*/
 	position: relative;
-	margin-bottom: 2rem;
+	/*margin-bottom: 2rem;*/
+	float: left;
+}
+.op{
+	width: 96%;
+	height: auto;
+	/*position: absolute;*/
+	top: 7rem;
+	/*font-family: "苹方";*/
+	text-align: right;
+	color: #99A0A9;
+	/*margin: 0px auto;*/
+	position: relative;
+	/*margin-bottom: 2rem;*/
+	float: left;
+}
+.sla{
+	width: 96%;
+	height: auto;
+	/*position: absolute;*/
+	top: 5rem;
+	/*font-family: "苹方";*/
+	text-align: right;
+	color: #99A0A9;
+	/*margin: 0px auto;*/
+	position: relative;
+	/*margin-bottom: 2rem;*/
+	float: left;
 }
 .che-news .bianhao{
 	font-size:18px ;
@@ -407,11 +368,30 @@ body{
 	background: red;
 	margin-left: 20%;
 }
-
-.che-ping{
+.opq{
+	display: block;
+	width: 60%;
+	height: auto;
+	position: absolute;
+	top: 12rem;
+	margin-bottom: 2rem;
+	background: red;
+	margin-left: 20%;
+}
+.slaa{
+	display: block;
+	width: 60%;
+	height: auto;
+	position: absolute;
+	top: 10rem;
+	margin-bottom: 2rem;
+	background: red;
+	margin-left: 20%;
+}
+.ping{
 	display: none;
 }
-.che-ping-first{
+.pl{
 	display: block;
 }
 
