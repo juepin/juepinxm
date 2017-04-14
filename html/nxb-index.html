@@ -81,20 +81,26 @@
 	<!-- 四个图标开始 -->
 	<section>
 	<div class="icon">
-		<a href="yy-creat.html"><img src="../img/n-mx.png" alt=""></a>
+		<a href="yy-creat.html"><img src="../img/n-mx.png" alt="">
 		<p>明星原创</p>
+		</a>
 	</div>
 	<div class="icon">
-		<a href=""><img src="../img/n-xp.png" alt=""></a>
-		<p>新品来袭</p>
+		<a href=""><img src="../img/n-xp.png" alt="">
+			<p>新品来袭</p>
+	    </a>
 	</div>
 	<div class="icon">
-		<a href=""><img src="../img/n-xd.png" alt=""></a>
-		<p>限定好货</p>
+		<a href="">
+			<img src="../img/n-xd.png" alt="">
+		    <p>限定好货</p>
+		</a>
 	</div>
 	<div class="icon">
-		<a href=""><img src="../img/n-py.png" alt=""></a>
+		<a href="">
+			<img src="../img/n-py.png" alt="">
 		<p>漂洋过海</p>
+	</a>
 	</div>
 </section>
 <!-- 标题1 -->
@@ -108,11 +114,10 @@
 	        <div class="swiper-wrapper">
 	            <div class="swiper-slide"><img src="../img/n-list1.png" alt="" /></div>
 	            <div class="swiper-slide"><img src="../img/n-list2.png" alt="" /></div>
-	            <!-- <div class="swiper-slide"><img src="../img/n-list3.png" alt="" /></div>
+	            <div class="swiper-slide"><img src="../img/n-list3.png" alt="" /></div>
 	            <div class="swiper-slide"><img src="../img/n-list4.png" alt="" /></div>
-	            <div class="swiper-slide"><img src="../img/n-list5.png" alt="" /></div> -->
-	        </div>
-	        <!-- Add Pagination -->
+	            <div class="swiper-slide"><img src="../img/n-list5.png" alt="" /></div> 
+	       </div>
     </div>
 </div>
 <!--作品展示开始-->
@@ -182,7 +187,7 @@
    </div>
 </div>
 
-<div class="designer">
+<div class="designer designer2">
    <div class="left">
    	  <div class='touxiang tx'>
    	  	<img src="../img/n-ps2.png" alt="">
@@ -235,8 +240,6 @@
         loop:true,
    });
 	// var swiper = new Swiper('.swiper-container3', {
- //        pagination: '.swiper-pagination',
- //        paginationClickable: true,
  //        spaceBetween:0,
  //        autoplay:2000,
  //        loop:true,
@@ -245,6 +248,7 @@
 var myScroll;
 
 	function loaded () {
-		myScroll = new IScroll('#wrapper',{ mouseWheel: true });
+		myScroll = new IScroll('#wrapper',{ mouseWheel: true ,
+			bounce:false});
 	}
 </script>
