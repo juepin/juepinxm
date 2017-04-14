@@ -1,7 +1,6 @@
 body{
 	background-color:#fff;
 	overflow: auto;
-	height:2000px;
 }
 .title{
 	background-color:#fff;
@@ -184,4 +183,151 @@ header>.top>.md{
 	background-size:100%;
 	background-repeat: no-repeat;
 	background-position:0 0.1rem;
+}
+/*潮流搭配*/
+.match{
+	margin-top:0.38rem;
+	width:100%;
+	overflow: hidden;
+	margin-bottom:1rem;
+}
+.match .title img{
+	float: left;
+	width:1.9rem;
+	height:0.88rem;
+}
+.match .title .more{
+	float: right;
+	width:0.26rem;
+	height:0.07rem;
+	margin-top:0.62rem;
+	margin-right:0.24rem;
+}
+.match ul{
+	width:100%;
+}
+.match ul li{
+	width:100%;
+	height:5.6rem;
+	position: relative;
+}
+.match ul li .bag{
+	background-image:url("../img/creat/clg_02.png");
+	background-size: cover;
+	width:7.5rem;
+	height:3.98rem;
+}
+.match ul .col1 .bag{
+	background-image:url("../img/creat/clg_04.png");
+}
+.match ul li .content{
+	position: absolute;
+	top:3rem;
+	left:0.24rem;
+	width:7.02rem;
+	height:2.2rem;
+	border-radius:4px;
+	background-color:#fff;
+	box-shadow:0 0.04rem 0.4rem rgba(0,0,0,0.2);
+}
+.match ul li .content .top{
+	width:100%;
+}
+.match ul li .content .top .left{
+	float: left;
+	width:80%;
+	margin-top:0.08rem;
+}
+.match ul li .content .top .left h6{
+	margin-left:0.1rem;
+}
+.match ul .col1 .content .top .left h6 span:first-child,.match ul .col1 .content .top .left h6 span:last-child{
+	color:#a999d2;
+}
+.match ul li .content .top .left h6 span:first-child{
+	font-size:0.3rem;
+	color:#1397fb;
+	font-weight:bold;
+}
+.match ul li .content .top .left h6 span:last-child{
+	font-size:0.3rem;
+	color:#1397fb;
+	font-weight:normal;
+}
+.match ul li .content .top .left p{
+	margin-left:0.1rem;
+	font-size:0.24rem;
+	color:#909090;
+	margin-top:0.05rem;
+}
+.match ul li .content .top .right{
+	float:right;
+	width:10%;
+	margin-top:0.08rem;
+	margin-right:0.2rem;
+}
+.match ul li .content .top .right .tx{
+	background-image: url("../img/creat/clh_22.png");
+	width:0.76rem;
+	height:0.76rem;
+	background-size: cover;
+	position: relative;
+}
+.match ul li .content .top .right .tx .bg{
+	position: absolute;
+	left:0.08rem;
+	top:0.08rem;
+	width:0.6rem;
+	height:0.6rem;
+	border-radius:50%;
+	background-color:#fff;
+	background-image:url("../img/n-ps1.png");
+	background-size:cover;
+}
+.match ul .col1 .content .top .right .tx .bg{
+	background-image:url("../img/n-ps2.png");
+	background-size:cover;
+}
+.match ul li .content .bottom{
+	width:100%;
+}
+.match ul li .content .bottom img{
+	width:4.28rem;
+	height:0.04rem;
+}
+.match ul li .content .bottom p{
+	margin-left:0.2rem;
+	margin-right:0.2rem;
+	color:#bbb;
+	font-size:0.24rem;
+	margin-top:0.06rem;
+}
+.match ul li .content .bottom .col{
+	float: right;
+	margin-right:0.2rem;
+	width:2rem;
+	margin-top:0.06rem;
+}
+.match ul li .content .bottom .col .rig{
+	float: left;
+}
+.match ul li .content .bottom .col .lef{
+	float: left;
+	margin-left:0.2rem;
+}
+.match ul li .content .bottom .col .rig img{
+	width:0.2rem;
+	height:0.2rem;
+}
+.match ul li .content .bottom .col .rig span{
+	color:#bbb;
+	font-size:0.2rem;
+}
+.match ul li .content .bottom .col .lef img{
+	width:0.2rem;
+	height:0.2rem;
+}
+.match ul li .content .bottom .col .lef span{
+	color:#bbb;
+	font-size:0.2rem;
 }
