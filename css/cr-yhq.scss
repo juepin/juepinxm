@@ -31,12 +31,20 @@ div.head{
     height:0.88rem;
 
 }
+.head .top a:nth-child(2) img{
+    width:1.88rem;
+    height:auto;
+    margin-left:0.35rem;
+    margin-top:0.05rem;
+}
+
 
 .head .top a:nth-child(2){
     margin-left:1.60rem;
 }
 .head .top a:nth-child(3){
     float:right;
+    margin-right:-0.22rem;
 }
 .head .top a:first-child img{
    width:0.66rem;
@@ -57,7 +65,7 @@ div.head{
 }
 .head >div.all > div.three{
     position:absolute;
-    top:0.28rem;
+    top:0.275rem;
     left:0.08rem;
     width:1rem;
     height:0.4rem;
@@ -78,7 +86,7 @@ div.head{
     text-align:center;
     line-height:0.4rem;
     color:#eaeaea;
-    font-size:0.16rem;
+    font-size:0.12rem;
 }
 
 
@@ -108,11 +116,49 @@ div.list >img{
     width:4.5rem;
     height:1.78rem;
     float:left;
-    background:#32EDA9;
-    margin-left:0.2rem;
+    margin-left:0.25rem;
     margin-top:0.23rem;
 }
-.list >p{
+.list >div.gbg >img{    
+    height:100%;
+}
+
+.list >div.font2{
+    width:4.5rem;
+    height:0.24rem;
     float:left;
-    margin-left:0.4rem;
+    margin-left:0.25rem;
+    margin-top:0.1rem;
+}
+.list >div.font2 >div.yuan{
+    width:0.24rem;
+    height:0.24rem;
+    border-radius:50%;
+    background:#1FCE7E;
+    float:left;
+    margin-right:0.1rem;
+}
+
+.list >div.font2 >p:nth-of-type(1){
+    float:left;
+    color:#1FCE7E;
+    font-size:0.22rem;
+    line-height:0.24rem;
+}
+.list >div.font2 >p:nth-of-type(2){
+    float:right;
+    color:#1FCE7E;
+    font-size:0.22rem;
+    line-height:0.24rem;
+}
+
+
+div.nouse1{
+    width:7.02rem;
+    height:0.60rem;
+    margin:0.2rem auto;
+    
+}
+div.nouse1 img{
+    height:100%;
 }
