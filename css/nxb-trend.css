@@ -1,0 +1,13 @@
+header>.bottom{
+	width: 2.58rem;
+	height: .68rem;
+	margin-left:2.46rem;
+	padding: 0.08rem;
+	background: none;
+}
+header>.bottom>img{
+    position: absolute;
+    top:1.7rem;
+    left:0.7rem;
+    height: 3.38rem
+}
