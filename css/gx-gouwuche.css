@@ -23,17 +23,18 @@ body{
     display: inline-block;
 }
 .header .leimu1 div:first-child{
-	width: .8rem;
-	height: .8rem;
+	width: .6rem;
+	height: .6rem;
 	float: left;
 	margin-left: .4rem;
-	margin-top: .45rem;
+	margin-top: .58rem;
 	display: inline-block;
-	background-image: url(../img/n-menu.png);
-	background-position: -18px -14px;
-	background-size: 66px;
+	background-image: url(../img/gx-search_102.png);
+	background-position: -13px -11px;
+	background-size: 51px;
 	background-repeat: no-repeat;
 }
+
 .header .leimu1 div:nth-child(2){
 	width: 1.06rem;
 	height: .9rem;
@@ -41,21 +42,51 @@ body{
 	margin-left: 2rem;
 	margin-top: .45rem;
 	display: inline-block;
-	background-image: url(../img/n-title.png);
+	position: relative;
+	/*background-image: url(../img/n-title.png);
 	background-position: -4px 0px;
 	background-size: 66px;
-	background-repeat: no-repeat;
+	background-repeat: no-repeat;*/
+}
+
+.header .leimu1 div:nth-child(2) P:first-child{
+	font-size:20px;
+	/*font-family: "苹方";*/
+	color: white;
+	display: block;
+	width: 2rem;
+	height: .4rem;
+	position: absolute;
+	left: -12px;
+	bottom: 37px;
+}
+.header .leimu1 div:nth-child(2) P:first-child span{
+	font-size: 30px;
+	font-family: "苹方";
+}
+.header .leimu1 div:nth-child(2) P:last-child{
+	font-size:12px;
+	/*text-align: center;*/
+	font-family: "San Francisco Display Bold";
+	color: white;
+	/*margin-top: 3px;*/
+	display: block;
+	width: 3rem;
+	height: .4rem;
+	position: absolute;
+	left: -39px;
+	bottom: 0px;
 }
 .header .leimu1 div:last-child{
 	width: 1.4rem;
 	height: .8rem;
 	float: right;
 	margin-right: .4rem;
-	margin-top: .45rem;
+	margin-top: .55rem;
 	display: inline-block;
 	background-image: url(../img/n-search.png);
-	background-position: -3px -14px;
-	background-size: 90px;
+	background-position: -3px -12px;
+	background-size: 77px;
 	background-repeat: no-repeat;
 }
 .header .leimu2{
@@ -68,13 +99,47 @@ body{
 	height: 1rem;
 	margin: 0 auto;
 	margin-bottom: .3rem;
-	background-image: url(../img/n-chose.png);
-	background-position: -2px 1px;
-	background-size: 196px;
+	background-image: url(../img/cr-hyqq.png);
+	background-position: -1px 1px;
+	background-size: 194px;
 	position: relative;
 	background-repeat: no-repeat;
 }
-.header .leimu2 .kuang .baby{
+.header > .leimu2 div.three {
+  position: absolute;
+  top: 0.16rem;
+  left: 0.08rem;
+  width: 1.4rem;
+  height: 0.4rem;
+  border-radius: 0.2rem;
+  color: #eaeaea;
+}
+
+.header > .leimu2 div.active {
+  background: #3292CF;
+}
+
+.header > .leimu2 div.three:nth-of-type(2) {
+  left: 1.4rem;
+  top: 0.2rem;
+  color: #999595;
+}
+
+.header > .leimu2 div.three:nth-of-type(3) {
+  left: 2.4rem;
+  top: 0.2rem;
+  color: #999595;
+}
+
+.header > .leimu2 div.three > p {
+  height: 100%;
+  text-align: center;
+  line-height: 0.4rem;
+  /*color: #eaeaea;*/
+  font-size: 0.2rem;
+  font-family: "苹方";
+}
+/*.header .leimu2 .kuang .baby{
 	width: 2rem;
 	height: .7rem;
 	background: #3292CF;
@@ -113,7 +178,7 @@ body{
 	color: #999595;
 	line-height: .48rem;
 	font-size: 20px;
-}
+}*/
 /*底部固定定位*/
 .don{
 	width: 100%;
