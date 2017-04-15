@@ -57,3 +57,18 @@
 		</div>-->
 	</body>
 </html>
+<script>
+var myScroll;
+
+	function loaded () {
+		myScroll = new IScroll('#wrapper',{ mouseWheel: true ,
+			bounce:false});
+	}
+   let a=$('header>.bottom>a')
+   a.click(function(){
+   		a.removeClass('active').eq($(this).index()).addClass('active');
+   		$('nav').css('display','none').eq($(this).index()).css('display','block');
+   })
+  
+
+</script>
