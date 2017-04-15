@@ -9,7 +9,8 @@
 	<meta name="screen-orientation" content="portrait">
 	<meta name="x5-fullscreen" content="true" />
 	<meta name="full-screen" content="yes">
-	<meta name="format-detection" content="telephone=no, email=no" />	
+	<meta name="format-detection" content="telephone=no, email=no" />
+	<script type="text/javascript" src="../js/jquery.js"></script>
 	<link rel="stylesheet" type="text/css" href="../css/common.css"/>
 	<script src="../js/rem.js"></script>
 	<link rel="stylesheet" type="text/css" href="../css/xx-pay-success.css"/>
@@ -23,9 +24,8 @@
 			<div class="leimu2">
 				<div class="kuang"></div>
 			</div>
-			<!--<div class="leimu3"></div>-->
 		</div>
-		
+		    
 		<div class="success-neirong">
 			<div class="neiRong">
 				<div></div>
@@ -43,7 +43,7 @@
 		
 		<!--返回首页-->
 		<div class="success-back">
-			<span><a href="nxb-index.html"></a>返回首页</span>
+			<span><a href="nxb-index.html">返回首页</a></span>
 		</div>
 		<!--底部固定定位-->
 		<!--<div class="success-don">
@@ -57,4 +57,18 @@
 		</div>-->
 	</body>
 </html>
-		
+<script>
+var myScroll;
+
+	function loaded () {
+		myScroll = new IScroll('#wrapper',{ mouseWheel: true ,
+			bounce:false});
+	}
+   let a=$('header>.bottom>a')
+   a.click(function(){
+   		a.removeClass('active').eq($(this).index()).addClass('active');
+   		$('nav').css('display','none').eq($(this).index()).css('display','block');
+   })
+  
+
+</script>

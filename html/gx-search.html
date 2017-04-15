@@ -9,6 +9,7 @@
 	<meta name="x5-fullscreen" content="true" />
 	<meta name="full-screen" content="yes">
 	<meta name="format-detection" content="telephone=no, email=no" />
+	<script type="text/javascript" src="../js/iscroll.js"></script>
 	<script type="text/javascript" src="../js/jquery.js"></script>
 	<link rel="stylesheet" href="../css/swiper.css"> 
 	<link rel="stylesheet" href="../css/gx-search.css"> 
@@ -17,7 +18,7 @@
 	<script src="../js/rem.js"></script>
     <title></title>
 </head>
-<body>
+<body onload="loaded()">
 	<!--顶部固定定位-->
 	<div class="search-header">
 		<div class="leimu1">
@@ -35,7 +36,7 @@
 		<div class="dian2"></div>
 		<div class="xuanze"></div>
 	</div>
-	
+
 	<!--下拉-->
 	<ul class="xiala">
 		<a href="gx-searchRl.html"><li><p>推荐</p></li></a>
@@ -54,7 +55,8 @@
 			<li><p>装饰</p></li>
 		</ul>
 	</div>
-	
+<div id="wrapper">
+	<div id="scroller">
 	<!--轮播-->
 	<div class="swiper-container">
         <div class="swiper-wrapper">
@@ -122,6 +124,8 @@
 			</div>
 		</li>
 	</ul>
+    </div>
+</div>
 	<!--底部固定定位-->
 	<div class="che-don">
 		<ul>
@@ -134,5 +138,31 @@
 	</div>
 </body>
 </html>
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        effect: 'coverflow',
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        coverflow: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows : true
+        },
+        loop:true
+    });
+    
+    
+    
+    var myScroll;
 
+	function loaded () {
+		myScroll = new IScroll('#wrapper',{ mouseWheel: true ,
+			bounce:false});
+	}
+   
+    </script>
 	
