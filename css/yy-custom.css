@@ -1,6 +1,13 @@
 body {
   background-color: #fff;
-  overflow: auto;
+  overflow: hidden;
+}
+
+header {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
 }
 
 header .top {
@@ -349,6 +356,11 @@ header > .bottom .right span {
   line-height: 0.44rem;
   font-size: 0.3rem;
   margin-top: 0.05rem;
+  color: #747474;
+  background-color: #fff;
+}
+
+.size .selc .add .lef .select {
   color: #fff;
   background-color: #3e4651;
 }
@@ -372,6 +384,11 @@ header > .bottom .right span {
   font-weight: bold;
 }
 
+.size .selc .add .mid p span {
+  font-size: 0.28rem;
+  color: #6c6c6c;
+}
+
 .size .selc .add .righ {
   float: left;
   width: 25%;
@@ -388,6 +405,11 @@ header > .bottom .right span {
   margin-top: 0.05rem;
   color: #747474;
   background-color: #fff;
+}
+
+.size .selc .add .righ .select {
+  color: #fff;
+  background-color: #3e4651;
 }
 
 .origin {
@@ -448,7 +470,7 @@ header > .bottom .right span {
 .ask {
   width: 100%;
   text-align: center;
-  margin-bottom: 1rem;
+  margin-bottom: 0.4rem;
 }
 
 .ask a {

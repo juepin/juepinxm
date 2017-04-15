@@ -1,9 +1,13 @@
 //头部
 body{
   background-color:#fff;
-  overflow: auto;
+  overflow: hidden;
 }
 header{
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
   .top{
     position: relative;
     .md{
@@ -336,6 +340,10 @@ $colorp1:#cacaca;
     p{
       float: right;
       @include bord;
+      color:#747474;
+      background-color:#fff;
+    }
+    .select{
       color:#fff;
       background-color:#3e4651;
     }
@@ -355,6 +363,10 @@ $colorp1:#cacaca;
       font-size:0.28rem;
       color:#6c6c6c;
       font-weight:bold;
+      span{
+        font-size:0.28rem;
+        color:#6c6c6c;
+      }
     }
   }
   .righ{
@@ -364,6 +376,10 @@ $colorp1:#cacaca;
       @include bord;
       color:#747474;
       background-color:#fff;
+    }
+    .select{
+      color:#fff;
+      background-color:#3e4651;
     }
   }
 }
@@ -417,7 +433,7 @@ $colorp1:#cacaca;
 .ask{
   width:100%;
   text-align: center;
-  margin-bottom:1rem;
+  margin-bottom:0.4rem;
   a{
     display: block;
     img{
