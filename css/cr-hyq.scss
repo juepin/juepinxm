@@ -299,6 +299,11 @@ div.list >div.toux >div.cir{
     top:0.1rem;
     left:0.1rem;
 }
+div.list >div.toux >div.cir >a{
+   float:left;
+   width:100%;
+   height:100%; 
+}
 div.two >div.toux >div.cir{
     background-image:url(../img/cr-tpic3.jpg);
     background-size:150%;

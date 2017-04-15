@@ -1,14 +1,7 @@
 html{
-	/*width: 100%;
-	height: 100%;
-	overflow: hidden;	
-	position:relative;*/
 	-ms-touch-action: none;
 }
 body{
-	/*height: 100%;*/
-	/*height: 100%;*/
-	/*background:#fff;*/
 	overflow:hidden;
 }
 header{
@@ -68,12 +61,12 @@ header>.bottom{
 header>.bottom>a{
 	display: block;
 	width: 48%;
-	height: 100%;
+	height: 77%;
 	float: left;
 	line-height:.5rem;
 	text-align: center;
 }
-header>.bottom>a>.active{
+header>.bottom>a.active{
 	background: #3392CF;
     border-radius: 1.1rem;
     margin: .02rem 0 0 .03rem;
@@ -101,16 +94,21 @@ header>.bottom>a>.baby>span{
 	transform:rotate(45deg);
 	color: #fff;
 }
+nav{
+	display: none
+}
+nav:first-child{
+	display: block;
+}
 .chose{
    width: 100%;
    height: 5.02rem;
    position: relative;
-   /*margin-top: 2rem;*/
 }
 .chose>.swiper-container >.swiper-pagination>.swiper-pagination-bullet-active {
     background: #007aff;
 }
-.chose>.swiper-container>.swiper-wrapper>.swiper-slide>img{
+.chose>.swiper-container>.swiper-wrapper>.swiper-slide>a>img{
 	width: 7.5rem;
 }
 .ban>.swiper-container3{
@@ -140,6 +138,9 @@ header>.bottom>a>.baby>span{
 }
 .dingwei>.font{
 	width: 2.6rem;
+}
+.dingwei>#fonts{
+	padding: 0
 }
 .dingwei>.font>p:first-child{
 	height: 40%;
@@ -396,10 +397,10 @@ section>.icon>a>img{
 	background: url(../img/gx-fix_85.png);
 	background-size: 100%;
 }
-/*.don >ul >li:nth-child(5)>a:hover{
+.don >ul >li:nth-child(5)>a:hover{
 	background: url(../img/cr-wd1.png);
 	background-size: 100%;
-}*/
+}
 #header {
 	position: absolute;
 	z-index: 2;
@@ -423,9 +424,7 @@ section>.icon>a>img{
 	left: 0;
 	width: 100%;
 	height: 0.94rem;
-	/*background: #444;*/
 	padding: 0;
-	/*border-top: 1px solid #444;*/
 }
 
 #wrapper {
