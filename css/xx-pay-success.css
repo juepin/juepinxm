@@ -253,3 +253,7 @@ body{
 	margin-top: 6px;
 	color: white;
 }
+.success-back span >a{
+	font-size: 18px;
+	color: white;
+}
