@@ -46,6 +46,9 @@ header>.top>div>a{
 	width: .88rem;
 	height: 100%
 }
+header>.top>div>a:first-child{
+	margin-left: -.2rem
+}
 header>.top>div>a>img,header>.top>div>img{
 	width: .88rem
 }
@@ -62,18 +65,21 @@ header>.bottom{
 	padding: 0.08rem;
 	color: #ccc
 }
-header>.bottom>a>.baby{
-	display: inline-block;
-	width: 1.40rem;
-	height: .51rem;
+header>.bottom>a{
+	display: block;
+	width: 48%;
+	height: 100%;
+	float: left;
+	line-height:.5rem;
+	text-align: center;
+}
+header>.bottom>a>.active{
 	background: #3392CF;
     border-radius: 1.1rem;
-    color: #fff;
-    text-align: center;
-	line-height: .51rem;
-	margin-top: .03rem;
+    margin: .02rem 0 0 .03rem;
 }
 header>.bottom>a>.design{
+	width: 100%;
 	display: inline-block;
 	height: .51rem;
 	color: #fff;
@@ -214,7 +220,7 @@ section>.icon>a>img{
 }
 /*标题2*/
 .ban{
-	margin-top: .5rem;
+	margin-top: .2rem;
 	width: 7.5rem;
 	height: 3.98rem;
 	position: relative;
@@ -390,10 +396,10 @@ section>.icon>a>img{
 	background: url(../img/gx-fix_85.png);
 	background-size: 100%;
 }
-.don >ul >li:nth-child(5)>a:hover{
+/*.don >ul >li:nth-child(5)>a:hover{
 	background: url(../img/cr-wd1.png);
 	background-size: 100%;
-}
+}*/
 #header {
 	position: absolute;
 	z-index: 2;

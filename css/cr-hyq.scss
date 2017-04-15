@@ -38,6 +38,8 @@ div.head{
     float:right;
 }
 
+
+
 .head >div.all{
     width:3.12rem;
     height:0.8rem;
@@ -50,6 +52,7 @@ div.head{
     height:0.6rem;
     text-align:center;
 }
+
 .head >div.all > div.three{
     position:absolute;
     top:0.28rem;
@@ -391,3 +394,13 @@ div.list >img{
     margin-bottom: .07rem;
 }
 
+.don ul li a{
+    display:block;
+    margin:0 auto;
+    width: .88rem;
+    height:100%;
+    
+}
+.don ul li:nth-child(3) a{
+    background:#505A67;
+}

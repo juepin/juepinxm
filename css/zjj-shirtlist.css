@@ -1,6 +1,8 @@
 @import url("common.css");
+
 body{
 	background: #fff;
+	font-family: "宋体";
 }
 /*顶部开始*/
 .header{
@@ -8,12 +10,17 @@ body{
 	height:auto;
 	float: left;
 	position: fixed;
+	z-index: 100;
+	background: #fff;
+	/*position: relative;*/
 }
 .header .leimu1{
 	width: 100%;
 	height: auto;
 	float: left;
 	text-align: justify;
+	background: url(../img/xx-class04.png) no-repeat -0.3rem -0.1rem/110% 100%;
+	z-inde:5;
 }
 .header .leimu1:after{
 	content: "";
@@ -25,27 +32,34 @@ body{
 	height: .8rem;
 	float: left;
 	margin-left: .4rem;
-	margin-top: 0.6rem;
+	margin-top: 0.4rem;
 	box-sizing:border-box;
 	display: inline-block;
-	background-image: url(../img/zjj-return.png);
+	background-image: url(../img/zjj-return1.png);
 	background-size: 0.53rem 0.53rem;
 	background-position: 0 0;
 	background-repeat: no-repeat;
 
 }
 .header .leimu1 div:nth-child(2){
-	width: 1rem;
+	width: 1.5rem;
 	height: .8rem;
 	float: left;
 	margin: 0 auto;
-	/*margin-left: 1rem;*/
-	margin-top: 0.6rem;
+	margin-left: 2rem;
+	margin-top: 0.4rem;
 	display: inline-block;
 	box-sizing:border-box;
 }
-.header .leimu1 div:nth-child(2) h3,h4{
-	color: #C2C2C2;
+.header .leimu1 div:nth-child(2) h3{
+	color: #fff;
+	font-size: 18px;
+	margin-top: -0.05rem;
+}
+.header .leimu1 div:nth-child(2) h4{
+	color: #ACACAD;
+	font-size: 16px;
+	margin-left: -0.25rem;
 }
 .header .leimu1 div span{
 	display: inline-block;
@@ -60,9 +74,8 @@ body{
 	height: .8rem;
 	float: right;
 	margin-right: .4rem;
-	margin-top: 0.6rem;
+	margin-top: 0.4rem;
 	display: inline-block;
-	background-image: url(../img/zjj-zhuce.png);
 	background-position: 20px 2px;
 	background-size: 0.9rem 0.52rem;
 	background-repeat: no-repeat;
@@ -73,50 +86,83 @@ body{
 }
 .header .tiao{
 	width: 100%;
-	height: 0.05rem;
-	background: url(../img/zjj-rect.png) no-repeat;
-	margin-top: 1.3rem;
+	height: 0.1rem;
+	background: rgba(0,0,0,0.6);
+	margin-top: 1.2rem;
+	z-index: 199;
 }
 .header .classify{
 	width: 100%;
 	height: auto;
 	padding: 0 0.54rem;
 	position: relative;
+	background: #fff;
+	z-index: 200;
+	box-sizing:border-box;
 	/*margin-top: -0.5rem;*/
 }
-.header .classify div{
+.header .classify .c-box{
+	width: 6.6rem;
+	height: 1.12rem;
+	margin: 0 auto;
+	/*background: red;*/
+}
+.header .classify .lei{
 	float: left;
 	width: 25%;
-	height: 2rem;
+	height: auto;
 }
-.header .classify div:nth-child(1){
+.header .classify .lei:nth-child(1){
 	width: 30%;
+	height: auto;
 }
-.header .classify div:nth-child(2){
-	width: 20%;
+.header .classify .lei:nth-child(2){
+	width: 30%;
+	height: auto;
 }
-.header .classify div span{
+.header .classify .lei span{
 	display: block;
-	font-size: 16px;
 }
-.header .classify div span i{
-	/*font-size: 30px;*/
+
+.header .classify .lei span:nth-child(1){
+	font-size: 12px;
+	color: #A8A8A8;
+}
+.header .classify .lei span:nth-child(2){
+	font-size: 12px;
+	color: #767676;
+}
+.header .classify .lei span:nth-child(3){
+	font-size: 12px;
+	color: #A8A8A8;
+	margin-top: -0.1rem;
+	/*line-height: 0.08rem;*/
+}
+.header .classify .lei span:nth-child(4){
+	font-size: 18px;
+	color: #555;
+}
+
+.header .classify .lei span i{
+	
 
 	color: red;
 }
 .header .classify .sort{
-	width: 1rem;
-	height: 1rem;
+	width: 0.5rem;
+	height: 0.5rem;
 	position: absolute;
-	right: 1rem;
+	right: 0.3rem;
 	top: 0.6rem;
-	background: url(../img/zjj-sort.png) no-repeat;
+	background: url(../img/zjj-sort.png) no-repeat center center/0.38rem 0.38rem;
 }
 .header .line-box{
-	margin-top: 2.2rem;
+	margin-top: 0.5rem;
 	margin-left: 0.48rem;
 	width: 6.68rem;
 	height: 0.05rem;
+	/*background: #fff;*/
+	z-index: 200;
 	/*box-sizing:border-box;*/
 	position: relative;
 }
@@ -150,38 +196,241 @@ body{
 }
 /*顶部结束*/
 
+
 /*商品展示区开始*/
+#wrapper{
+	width: 100%;
+	height: 100%;
+	margin-bottom: 3.8rem;
+}
 .shop{
 	width: 100%;
 	height: auto;
-	padding: 0.25rem 0.3rem;
+	padding: 0.25rem 0.48rem;
+	box-sizing:border-box;
 	position: absolute;
-	top: 3.8rem;
+	top: 3rem;
 	left: 0;
+	margin-bottom: 0.5rem;
 }
 .shop .shop-left{
-	width: 49.5%;
+	width: 48%;
 	height: auto;
+	padding: 5px 0;
 	float: left;
 	/*background: red;*/
 }
 .shop .shop-left .shirtl{
-	width: 3.34rem;
+	width: 100%;
 	height: 4.96rem;
 	border-radius: 0.05rem;
 	box-shadow: -0.08rem -0.08rem 0.3rem #ccc;
 	margin-bottom: 0.2rem;
+	box-sizing:border-box;
+	position: relative;
 }
+.shop .shop-left .shirtl a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.shop .shop-left .shirtl a img{
+	display: block;
+	width: 2.62rem;
+	height: 3.3rem;
+	margin: 0 auto;
+/*	margin-top: -0.4rem;*/
+}
+.shop .shop-left .shirtl a h3{
+	text-align: center;
+	color: #525252;
+	font-size: 18px;
+	margin-top: 0.2rem;
+}
+.shop .shop-left .shirtl a h4{
+	text-align: center;
+	color: #525252;
+	font-size: 14px;
+	font-weight: bold;
+}
+.shop .shop-left .shirtl a h4 span{
+	color: #525252;
+	font-size: 14px;
+	font-weight: normal;
+}
+.shop .shop-left .shirtl a .price{
+	color: #F72950;
+	font-size: 12px;
+	padding-left: 0.2rem;
+	padding-top: 0.25rem;
+	display: inline-block;
+	width: 30%;
+	line-height: 0.18rem;
+	float: left;
+}
+.shop .shop-left .shirtl a .price b{
+	color: #F72950;
+	font-size: 16px; 
+	line-height: 0.18rem;
+}
+.shop .shop-left .shirtl a .zan{
+	display: inline-block;
+	width: 0.38rem;
+	height: 0.38rem;
+	background: url(../img/zjj-zan.png) no-repeat center center/0.38rem 0.38rem;
+	float: right;
+	margin-right: 0.3rem;
+	padding-top: 0.25rem;
+}
+.shop .shop-left .shirtl a  #count{
+	width: 0.74rem;
+	height: 0.46rem;
+	position: absolute;
+	top: 0.15rem;
+	right: 0.15rem;
+}
+
 .shop .shop-right{
-	width: 49.5%;
-	height: auto;
+	width: 48%;
+	height: 1080px;
+	padding: 5px 0 150px;
 	float: right;
 	/*background: blue;*/
 }
 .shop .shop-right .shirtr{
-	width: 3.34rem;
+	width: 100%;
 	height: 4.08rem;
 	border-radius: 0.05rem;
 	box-shadow: -0.08rem -0.08rem 0.3rem #ccc;
 	margin-bottom: 0.2rem;
+	box-sizing:border-box;
+	position: relative;
 }
+
+.shop .shop-right .shirtr a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.shop .shop-right .shirtr a img{
+	display: block;
+	width: 2.62rem;
+	height: 2.48rem;
+	margin: 0 auto;
+/*	margin-top: -0.4rem;*/
+}
+.shop .shop-right .shirtr:nth-child(1) a img{
+	display: block;
+	width: 2.62rem;
+	height: 2.48rem;
+	margin: 0 auto;
+/*	margin-top: -0.4rem;*/
+}
+.shop .shop-right .shirtr:nth-child(2){
+	width: 100%;
+	height: 4.96rem;
+	border-radius: 0.05rem;
+	box-shadow: -0.08rem -0.08rem 0.3rem #ccc;
+	margin-bottom: 0.2rem;
+	box-sizing:border-box;
+}
+.shop .shop-right .shirtr:nth-child(2) a img{
+	display: block;
+	width: 2.62rem;
+	height: 3.30rem;
+	margin: 0 auto;
+}
+.shop .shop-right .shirtr:nth-child(3){
+	width: 100%;
+	height: 4.96rem;
+	border-radius: 0.05rem;
+	box-shadow: -0.08rem -0.08rem 0.3rem #ccc;
+	margin-bottom: 0.2rem;
+	box-sizing:border-box;
+}
+.shop .shop-right .shirtr:nth-child(3) a img{
+	display: block;
+	width: 2.62rem;
+	height: 3.30rem;
+	margin: 0 auto;
+}
+.shop .shop-right .shirtr a h3{
+	text-align: center;
+	color: #525252;
+	font-size: 18px;
+	margin-top: 0.2rem;
+}
+.shop .shop-right .shirtr a h4{
+	text-align: center;
+	color: #525252;
+	font-size: 14px;
+	font-weight: bold;
+}
+.shop .shop-right .shirtr a h4 span{
+	color: #525252;
+	font-size: 14px;
+	font-weight: normal;
+}
+.shop .shop-right .shirtr a .price{
+	color: #F72950;
+	font-size: 12px;
+	padding-left: 0.2rem;
+	padding-top: 0.25rem;
+	display: inline-block;
+	width: 30%;
+	line-height: 0.18rem;
+	float: left;
+}
+.shop .shop-right .shirtr a .price b{
+	color: #F72950;
+	font-size: 16px; 
+	line-height: 0.18rem;
+}
+.shop .shop-right .shirtr a .zan{
+	display: inline-block;
+	width: 0.38rem;
+	height: 0.38rem;
+	background: url(../img/zjj-zan.png) no-repeat center center/0.38rem 0.38rem;
+	float: right;
+	margin-right: 0.3rem;
+	padding-top: 0.25rem;
+}
+.shop .shop-right .shirtr a  #count{
+	width: 0.74rem;
+	height: 0.46rem;
+	position: absolute;
+	top: 0.15rem;
+	right: 0.15rem;
+}
+/*展示区结束*/
+
+/*底部开始*/
+.don{
+	width: 100%;
+	height: .88rem;
+	background: #323840;
+	position:absolute;
+	bottom:0 ;
+	left: 0;
+	overflow:hidden;
+}
+.don ul{
+	width: 100%;
+	height: .88rem;
+	float: left;
+	display: block;
+}
+.don ul li {
+	display: block;
+	width: 18%;
+	text-align: center;
+	float: left;
+	margin: 0 1%;
+	height: 100%;
+}
+.don ul li img{
+	width: .88rem;
+	height: .9rem;
+	margin-bottom: .07rem;
+}
+/*底部结束*/
