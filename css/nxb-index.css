@@ -3,6 +3,7 @@ html{
 }
 body{
 	overflow:hidden;
+	background: #fff;
 }
 header{
 	width: 7.5rem;
@@ -107,6 +108,11 @@ nav:first-child{
 }
 .chose>.swiper-container >.swiper-pagination>.swiper-pagination-bullet-active {
     background: #007aff;
+}
+.chose>.swiper-container>.swiper-wrapper>.swiper-slide>a{
+	display: block;
+	width: 100%;
+	height: 100%;
 }
 .chose>.swiper-container>.swiper-wrapper>.swiper-slide>a>img{
 	width: 7.5rem;
@@ -270,7 +276,7 @@ section>.icon>a>img{
 .designer{
 	width: 7.18rem;
 	height: 2.28rem;
-	margin: 0.6rem auto;
+	margin: 0.35rem auto;
 	background: url('../img/n-dbg.png');
 	background-size: 100%;
 }
@@ -374,11 +380,7 @@ section>.icon>a>img{
 	margin: 0 auto
 }
 .don >ul >li:nth-child(1)>a{
-	background: url(../img/gx-fix_03.png);
-	background-size: 100%;
-}
-.don >ul >li:nth-child(1)>a:hover{
-	background: url(../img/n-hover1.png);
+	background: url(../img/n-home1.png);
 	background-size: 100%;
 }
 .don >ul >li:nth-child(2)>a{
