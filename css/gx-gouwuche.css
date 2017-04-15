@@ -37,33 +37,22 @@ body{
 }
 
 .header .leimu1 div:nth-child(2){
-	width: 1.06rem;
+	width: 2.06rem;
 	height: .9rem;
 	float: left;
-	margin-left: 2rem;
-	margin-top: .45rem;
-	display: inline-block;
+	margin-left: 1.6rem;
+	margin-top: .55rem;
 	position: relative;
-}
-
-.header .leimu1 div:nth-child(2) P:first-child{
-	font-size:20px;
-	color: white;
-	display: block;
-	width: 2rem;
-	height: .4rem;
-	position: absolute;
-	left: -12px;
-	bottom: 37px;
-}
-.header .leimu1 div:nth-child(2) P:first-child span{
-	font-size: 30px;
-	font-family: "苹方";
+	/*color: #D1D2D3;*/
+	background-image: url(../img/gx-guowuche.png);
+	background-repeat: no-repeat;
+	background-size: 100px;
+	
 }
 .header .leimu1 div:nth-child(2) P:last-child{
 	font-size:12px;
 	font-family: "San Francisco Display Bold";
-	color: white;
+	color:#98999B;
 	display: block;
 	width: 3rem;
 	height: .4rem;
@@ -373,7 +362,7 @@ color: #999595;
 	width: 60%;
 	height: auto;
 	position: absolute;
-	top: 12rem;
+	top: 11.7rem;
 	margin-bottom: 2rem;
 	background: red;
 	margin-left: 20%;
@@ -433,8 +422,9 @@ color: #999595;
 	background-size: 100%;
 }
 .che-don >ul >li:nth-child(4)>a{
-	background: url(../img/gx-fix_83.png);
-	background-size: 100%;
+	background: url(../img/home_09.png);
+	background-size: 104%;
+	background-position: 0px -3px;
 }
 .che-don >ul >li:nth-child(5)>a{
 	background: url(../img/gx-fix_85.png);

@@ -37,39 +37,16 @@ body{
 }
 
 .success-header .leimu1 div:nth-child(2){
-	width: 1.06rem;
+	width: 2.06rem;
 	height: .9rem;
 	float: left;
-	margin-left: 2rem;
-	margin-top: .45rem;
+	margin-left: 1.7rem;
+	margin-top: .55rem;
 	display: inline-block;
 	position: relative;
-}
-
-.success-header .leimu1 div:nth-child(2) P:first-child{
-	font-size:20px;
-	color: white;
-	display: block;
-	width: 2.5rem;
-	height: .4rem;
-	position: absolute;
-	left: -28px;
-	bottom: 37px;
-}
-.success-header .leimu1 div:nth-child(2) P:first-child span{
-	font-size: 30px;
-	font-family: "苹方";
-}
-.success-header .leimu1 div:nth-child(2) P:last-child{
-	font-size:12px;
-	font-family: "San Francisco Display Bold";
-	color: white;
-	display: block;
-	width: 3rem;
-	height: .4rem;
-	position: absolute;
-	left: -35px;
-	bottom: 0px;
+	background-image: url(../img/gx-success.png);
+	background-repeat: no-repeat;
+	background-size: 100px;
 }
 .success-header .leimu1 div:last-child{
 	width: 1.4rem;
@@ -82,11 +59,6 @@ body{
 	background-position: 11px 1px;
 	background-size: 55px;
 	background-repeat: no-repeat;
-}
-.success-header .leimu1 div:last-child a{
-	width: 1.4rem;
-	height: .8rem;
-	display: block;
 }
 .success-header .leimu2{
 	width: 100%;
@@ -104,6 +76,12 @@ body{
 	position: relative;
 	background-repeat: no-repeat;
 }
+.success-header .leimu3{
+	width: 100%;
+	height: 4rem;
+	background: black;
+	opacity: .1;
+}
 
 .success-neirong{
 	position: absolute;
@@ -113,7 +91,7 @@ body{
 }
 .success-neirong .neiRong{
 	width: 85%;
-	height:9.1rem;
+	height:8.8rem;
 	margin: 0 auto;
 	border:2px solid #3393CF;
 	box-sizing: border-box;
@@ -127,7 +105,7 @@ body{
 	background-size:63px;
 	background-repeat: no-repeat;
 	background-position: 8px 0px;
-	margin-top: .5rem;
+	margin-top: .2rem;
 }
 .success-neirong .neiRong p{
 	font-size: 20px;
@@ -211,12 +189,12 @@ body{
 	width: 94%;
 	border-bottom: 1px solid #E8E8E8;
 	position: absolute;
-	top: 8.5rem;
+	top: 8.2rem;
 	left: .2rem;
 	margin: 0 auto;
 }
 /*底部固定定位*/
-.success-don{
+/*.success-don{
 	width: 100%;
 	height: .94rem;
 	background: #323840;
@@ -259,4 +237,25 @@ body{
 .success-don >ul >li:nth-child(5)>a{
 	background: url(../img/gx-fix_85.png);
 	background-size: 100%;
+}*/
+
+/*返回首页*/
+.success-back{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 1rem;
+	background-image: url(../img/cr-sjyq_03.png);
+	background-repeat: no-repeat;
+	background-size:200px;
+	background-position: 90px 0px;
+}
+.success-back span{
+	font-size: 18px;
+	width: 2rem;
+	text-align: center;
+	display: block;
+	margin-left: 38%;
+	margin-top: 6px;
+	color: white;
 }
