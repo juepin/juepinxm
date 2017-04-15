@@ -62,6 +62,132 @@
 	color:#aaa;
 	top:2rem;
 }
+/*选项卡二第一部分开始*/
+.per {
+  margin-top: 0.6rem;
+  width: 100%;
+}
+
+.per ul {
+  width: 100%;
+  padding: 0 0.24rem;
+  height: 3.2rem;
+  box-sizing: border-box;
+  background-image: url("../img/creat/md_49.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 0 1.6rem;
+}
+
+.per ul li {
+  float: left;
+  width: 33.333333%;
+  height: 3.2rem;
+}
+
+.per ul li .bg {
+  background-image: url("../img/creat/cr-grzxtx1.png");
+  background-size: cover;
+  width: 1.6rem;
+  height: 1.6rem;
+  margin: 0 auto;
+  overflow: hidden; 
+  position: relative;
+}
+
+.per ul li .bg .tx {
+  width: 1.1rem;
+  height: 1.1rem;
+  border-radius: 50%;
+  background-color: #00c0a5;
+  margin-left: 0.32rem;
+  margin-top: 0.28rem;
+ 
+}
+.per ul li .bg  img{
+	position: absolute;
+	top:.07rem;
+	left: .29rem;
+	width: .7rem;
+}
+
+.inf {
+  text-align: center;
+}
+
+.inf h6 {
+  color: #818181;
+  font-size: 0.24rem;
+  font-weight: 400;
+}
+
+.inf p {
+  margin-top: 0.05rem;
+  color: #b1b1b1;
+  font-size: 0.2rem;
+  text-transform: capitalize;
+  margin-bottom: -0.1rem;
+}
+
+.inf img {
+  margin-top: -0.1rem;
+  width: 0.24rem;
+  height: 0.04rem;
+}
+
+.inf .str {
+  width: 100%;
+  margin-top: 0.05rem;
+}
+
+.inf .str .sta {
+  width: 0.28rem;
+  height: 0.28rem;
+  margin-left: -0.04rem;
+  margin-right: -0.04rem;
+}
+
+.per ul .star .bg {
+  margin-top: -0.48rem;
+  background-image: url("../img/creat/cr-grzxtx1.png");
+  width: 2.1rem;
+  height: 2.1rem;
+  position: relative;
+}
+
+.per ul .star .bg .tx {
+  width: 1.48rem;
+  height: 1.48rem;
+  margin-left: 0.42rem;
+  margin-top: 0.36rem;
+}
+
+.per ul .star .inf h6 {
+  margin-top: -0.05rem;
+  font-size: 0.26rem;
+}
+
+.per ul .star .inf .str .sta {
+  width: 0.36rem;
+  height: 0.36rem;
+}
+
+.per ul li:first-child .bg .tx {
+  background-image: url("../img/creat/tx.jpg");
+  background-size: cover;
+  background-position: -0.26rem 0;
+}
+
+.per ul li:nth-child(2) .bg .tx {
+  background-image: url("../img/creat/tx2.jpg");
+  background-size: cover;
+}
+
+.per ul li:last-child .bg .tx {
+  background-image: url("../img/creat/tx3.jpg");
+  background-size: cover;
+}
+
 /*设计师动态开始*/
 .bigbox{
 	width: 7.02rem;
@@ -118,6 +244,8 @@
 }
 .bigbox>.bottom{
 	width: 100%;
+	height: auto;
+	background: #fff;
 }
 .bigbox>.bottom>p{
 	text-align: center;
@@ -136,8 +264,12 @@
 
 }
 .bigbox>.bottom>.dingwei>.talk:first-child{
-		margin-left: 1.62rem
+	margin-left: 1.62rem
 }
 .bigbox>.bottom>.dingwei>.talk:last-child{
-		padding: 0
+	padding: 0
+}
+/*四部分 开始*/
+.four{
+	margin-top:.2rem;
 }
