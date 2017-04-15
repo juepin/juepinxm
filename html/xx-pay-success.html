@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
-	</head>
+	
 	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 	<meta name="x5-orientation" content="portrait | landscape" />
 	<meta name="screen-orientation" content="portrait">
@@ -14,6 +14,7 @@
 	<link rel="stylesheet" type="text/css" href="../css/common.css"/>
 	<script src="../js/rem.js"></script>
 	<link rel="stylesheet" type="text/css" href="../css/xx-pay-success.css"/>
+	</head>
 	<body>
 		<div class="success-header">
 			<div class="leimu1">
@@ -25,7 +26,8 @@
 				<div class="kuang"></div>
 			</div>
 		</div>
-		    
+		<div id="mask" class="mask"></div>
+		<a href="javascript:;" onclick="showMask()" class="dianyi"></a>
 		<div class="success-neirong">
 			<div class="neiRong">
 				<div></div>
@@ -40,6 +42,16 @@
 			</div>
 		</div>
 		<span class="xian"></span>
+		<div class="share" id="share">
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div onclick="hideMask()" id="close"></div>
+		</div>
 		
 		<!--返回首页-->
 		<div class="success-back">
@@ -57,18 +69,17 @@
 		</div>-->
 	</body>
 </html>
-<script>
-var myScroll;
+<pre class="html" name="code"><script type="text/javascript">
 
-	function loaded () {
-		myScroll = new IScroll('#wrapper',{ mouseWheel: true ,
-			bounce:false});
-	}
-   let a=$('header>.bottom>a')
-   a.click(function(){
-   		a.removeClass('active').eq($(this).index()).addClass('active');
-   		$('nav').css('display','none').eq($(this).index()).css('display','block');
-   })
-  
+//兼容火狐、IE8
+
+//显示遮罩层
+
+function showMask(){
+	$("#mask").css("height",$(document).height());
+	$("#share").css("display","block");
+	$("#mask").css("width",$(document).width());
+	$("#mask").show();
+}
 
 </script>
