@@ -1,6 +1,6 @@
 @import url("common.css");
 body{
-	overflow: auto;
+	overflow:auto;
 	/*height: 1000px;*/
 }
 /*开头固定定位*/

@@ -74,9 +74,14 @@ section:first-of-type{
 	width: 100%;
 	height: auto;
 }
-.pass > img:first-of-type{
+.pass > a:first-of-type {
 	display: block;
 	width: 3.85rem;
+	margin: 0 auto;
+}
+.pass > a:first-of-type img{
+	display: block;
+	width: 100%;
 	margin: 0 auto;
 }
 .pass > p:first-of-type{

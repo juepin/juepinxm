@@ -42,17 +42,18 @@
 			</div>
 		</div>
 		<span class="xian"></span>
-		<div class="share" id="share">
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
-			<div onclick="hideMask()" id="close"></div>
+		<div id="bgshare">
+			<div class="share" id="share">
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div onclick="hideMask()" id="close"></div>
+			</div>
 		</div>
-		
 		<!--返回首页-->
 		<div class="success-back">
 			<span><a href="nxb-index.html">返回首页</a></span>
@@ -77,9 +78,16 @@
 
 function showMask(){
 	$("#mask").css("height",$(document).height());
-	$("#share").css("display","block");
+	$("#bgshare").css("display","block");
 	$("#mask").css("width",$(document).width());
 	$("#mask").show();
 }
 
+//隐藏遮罩层
+function hideMask(){
+	$("#mask").css("height",0);
+	$("#bgshare").css("display","none");
+	$("#mask").css("width",0);
+	$("#mask").hide();
+}
 </script>

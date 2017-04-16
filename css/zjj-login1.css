@@ -340,7 +340,8 @@ b{
 	line-height: 0.6rem;
 	font-size:12px;
 	position: absolute;
-	top:-0.5rem;
+	top:0rem;
+	font-weight:normal;
 	left: 0.8rem;
 	/*background: red;*/
 }

@@ -9,8 +9,9 @@
 	<meta name="x5-fullscreen" content="true" />
 	<meta name="full-screen" content="yes">
 	<meta name="format-detection" content="telephone=no, email=no" />
-	<script type="text/javascript" src="../js/iscroll.js"></script>
 	<script type="text/javascript" src="../js/jquery.js"></script>
+	<script type="text/javascript" src="../js/iscroll.js"></script>
+	<script src="../js/demoUtils.js"></script>
 	<link rel="stylesheet" href="../css/swiper.css"> 
 	<link rel="stylesheet" href="../css/gx-search.css"> 
 	<script type="text/javascript" src="../js/swiper.js"></script>
@@ -19,17 +20,17 @@
     <title></title>
 </head>
 <style>
-		#wrapper {
+#wrapper {
 	position: absolute;
 	z-index: 1;
 	top: 2.13rem;
-	bottom: .94rem;
+	bottom: 0;
 	left: 0;
 	width: 100%;
 	overflow: hidden;
 }
 
-#scroller {
+	#scroller {
 	/*position: absolute;*/
 	z-index: 1;
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
@@ -55,9 +56,13 @@
 	<!--顶部固定定位-->
 	<div class="search-header">
 		<div class="leimu1">
+			<div>
+				<a href="nxb-index.html"></a>
+			</div>
 			<div></div>
-			<div></div>
-			<div></div>
+			<div>
+				<a href="gx-searchRl.html"></a>
+			</div>
 		</div>
 	</div>
 	
@@ -156,11 +161,12 @@
 			<span class="m10">人已经订制</span>
 			</div>
 		</li>
+		
 	</ul>
     </div>
 </div>
 	<!--底部固定定位-->
-	<div class="che-don">
+	<!--<div class="che-don">
 		<ul>
 			<li><a href="nxb-index.html"></a></li>
 			<li><a href="nxb-trend.html"></a></li>
@@ -168,7 +174,7 @@
 			<li><a href="gx-gouwuche.html"></a></li>
 			<li><a href="cr-grzx.html"></a></li>
 		</ul>
-	</div>
+	</div>-->
 </body>
 </html>
     <script>
@@ -181,7 +187,7 @@
         coverflow: {
             rotate: 50,
             stretch: 0,
-            depth: 100,
+            depth:100,
             modifier: 1,
             slideShadows : true
         },
@@ -193,9 +199,17 @@
     var myScroll;
 
 	function loaded () {
-		myScroll = new IScroll('#wrapper',{ mouseWheel: true ,
-			bounce:false});
+		myScroll = new IScroll('#wrapper',{
+            scrollbars: true,
+            mouseWheel: true,
+            interactiveScrollbars: true,
+            shrinkScrollbars: 'scale',
+            fadeScrollbars: true
+		});
 	}
-   
+    document.addEventListener('touchmove', function (e) { e.preventDefault(); }, isPassive() ? {
+        capture: false,
+        passive: false
+    } : false);
     </script>
 	

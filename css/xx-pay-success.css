@@ -94,22 +94,33 @@ body{
 	right:.45rem;
 	z-index: 99999999;
 }
-.share{
+#bgshare{
 	display: none;
 	width: 6rem;
-	height: 3rem;
-	background:white;
+	height: 3.5rem;
+	overflow: hidden;
 	position: absolute;
 	top: 5rem;
 	left: .77rem;
+	z-index: 9999;
+}
+.share{
+	
+	width: 6rem;
+	height: 3rem;
+	background:white;
+	/*position: absolute;
+	top: 5rem;
+	left: .77rem;*/
 	border-radius: 10px;
 	border: 1px solid #ccc;
 	box-sizing: border-box;
-	z-index: 9999;
-	overflow: hidden;
+	
+	margin-top: .5rem;
+	
 }
 .share div:first-child{
-	width: 100%;
+	width: 20%;
 	height: 3.2rem;
 	background-image: url(../img/gx-share.png);
 	background-repeat: no-repeat;
@@ -190,7 +201,7 @@ body{
 }
 .success-neirong .neiRong{
 	width: 85%;
-	height:8.8rem;
+	height:8.1rem;
 	margin: 0 auto;
 	border:2px solid #3393CF;
 	box-sizing: border-box;
@@ -230,7 +241,7 @@ body{
 	margin: 0 auto;
 	color: #0795DA;
 	font-size: 30px;
-	margin-top: .3rem;
+	margin-top: .1rem;
 }
 .success-neirong .neiRong .biao{
 	width: 1rem;
@@ -239,7 +250,7 @@ body{
 	margin: 0 auto;
 	color: #0795DA;
 	font-size: 16px;
-	margin-top: .18rem;
+	margin-top: .13rem;
 }
 .success-neirong .neiRong .bianhao{
 	font-size: 12px;
@@ -250,7 +261,7 @@ body{
 	height: .5rem;
 	display: block;
 	margin: 0 auto;
-	/*margin-top: .18rem;*/
+	margin-top: -.1rem;
 }
 .success-neirong .neiRong .xiaotu{
 	width: .8rem;
@@ -259,7 +270,7 @@ body{
 	background-size:40px;
 	background-repeat: no-repeat;
 	/*background-position: 8px 0px;*/
-	margin-top: .5rem;
+	margin-top: .3rem;
 	margin-left: .5rem;
 	float: left;
 }
@@ -271,7 +282,7 @@ body{
 	width: 4rem;
 	height: .5rem;
 	display: block;
-	margin-top: .8rem;
+	margin-top: .5rem;
 	margin-left: .6rem;
 }
 .success-neirong .neiRong .juan{
@@ -288,7 +299,7 @@ body{
 	width: 94%;
 	border-bottom: 1px solid #E8E8E8;
 	position: absolute;
-	top: 8.2rem;
+	top: 7.7rem;
 	left: .2rem;
 	margin: 0 auto;
 }
@@ -340,7 +351,7 @@ body{
 
 /*返回首页*/
 .success-back{
-	position: fixed;
+	position:absolute;
 	bottom: 0;
 	width: 100%;
 	height: 1rem;

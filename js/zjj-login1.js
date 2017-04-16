@@ -15,19 +15,28 @@ $(function(){
 		messages:{
 			function(messages,val){
 				if(val.next.length==0){
-					user:"请输入名字"
+					user:{
+						required:"请输入名字"
+					}
 				}else {
 					pass:{
 						required:"请输入密码"
-						// minlength:$.validator.format("密码不能小于{0}个字符")
+						 minlength:$.validator.format("密码不能小于{0}个字符")
 					}
 				}
 			}
+//			user:{
+//				required:"请输入名字",
+//			},
+//			pass:{
+//              required:,
+//           	rangelength:[6,12]
+//          },
 			
-				
 			
 			
 		},
+		
 		errorElement:"b",
 		errorPlacement:function(error,val){
 			if($(val).next('b').length==0){
@@ -41,17 +50,17 @@ $(function(){
 			console.log($("i"));
 		}
 	})
-	$("#login").on("click",function(){
-		$("#loginform").submit();
-		
-	})
-})
-	$.validator.setDefaults({
-		submitHandler:function(){
-			alert("登录成功");
-			location.replace('gx-gouwuche.html');
-
-		}
+//	$("#login").on("click",function(){
+//		$("#loginform").submit();
+//		
+//	})
+//})
+//	$.validator.setDefaults({
+//		submitHandler:function(){
+//			alert("登录成功");
+//			location.replace('gx-gouwuche.html');
+//
+//		}
 	})
 
 
