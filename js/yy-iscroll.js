@@ -12,7 +12,6 @@ function loaded () {
         fadeScrollbars: true
     });
 }
-
 document.addEventListener('touchmove', function (e) { e.preventDefault(); }, isPassive() ? {
     capture: false,
     passive: false

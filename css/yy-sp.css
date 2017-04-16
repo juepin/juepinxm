@@ -36,10 +36,10 @@ body {
 }
 .swiper-slide .btn{
     position:absolute;
-    bottom:1.82rem;
+    bottom:1.4rem;
     right:0.32rem;
     z-index:100000;
-    width:3.4rem;
+    width:3rem;
     height:0.8rem;
     border:2px solid #fff;
     text-align: center;
@@ -48,7 +48,7 @@ body {
     color:#fff;
 }
 .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-container-horizontal > .swiper-pagination-bullets{
-    bottom:1.2rem;
+    bottom:0.2rem;
     /*right:0.32rem;*/
     width:90%;
 }
