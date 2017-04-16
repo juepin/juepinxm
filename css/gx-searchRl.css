@@ -8,7 +8,7 @@ body{
 	width: 100%;
 	height:3.4rem;
 	float: left;
-	position: absolute;
+	position: fixed;
 	background: #282828;
 	z-index: 100;
 }
@@ -69,7 +69,7 @@ body{
 .searchRl-sousuo{
 	height: 1rem;
 	float: left;
-	position: absolute;
+	position: fixed;
 	left: 75px;
 	top: 47px;	
 	z-index: 100;
@@ -323,7 +323,7 @@ body{
 /*设计师*/
 .searchRl-master{
 	width: 100%;
-	height: 6rem;
+	/*height: 6rem;*/
 	position: absolute;
 	top: 13rem;
 	background-image:url(../img/gx-search_23.png) ;
