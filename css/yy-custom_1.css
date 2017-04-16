@@ -7,7 +7,7 @@ html{
 }
 a{
 	display:block;
-	overflow: hidden;
+	/*overflow: hidden;*/
 }
 body{
 	/*height: 100%;*/
