@@ -2,6 +2,10 @@ body{
 	background-color:#fff;
 	overflow: auto;
 }
+a{
+	display:block;
+	overflow: hidden;
+}
 * {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
