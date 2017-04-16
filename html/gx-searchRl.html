@@ -13,7 +13,45 @@
 	<script type="text/javascript" src="../js/rem.js"></script>
     <title></title>
 </head>
-<body>
+<style>
+	#wrapper {
+	position: absolute;
+	z-index: 1;
+	top: 0.25rem;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	overflow: hidden;
+}
+
+	#scroller {
+	/*position: absolute;*/
+	z-index: 1;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-transform: translateZ(0);
+	-moz-transform: translateZ(0);
+	-ms-transform: translateZ(0);
+	-o-transform: translateZ(0);
+	transform: translateZ(0);
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-text-size-adjust: none;
+	-moz-text-size-adjust: none;
+	-ms-text-size-adjust: none;
+	-o-text-size-adjust: none;
+	text-size-adjust: none;
+	background: #fff;
+}
+	</style>
+
+
+
+
+
+<body onload="loaded()">
 	<!--顶部固定定位-->
 	<div class="searchRl-header">
 		<div class="leimu1">
@@ -42,6 +80,10 @@
 		</ul>
 	</div>
 	
+	
+	
+<div id="wrapper">
+	<div id="scroller">	
 	<!--结果-->
 	<div class="searchRl-result">
 		<div class="word">
@@ -139,8 +181,10 @@
 			</div>
 		</li>
 	</ul>
+	</div>
+</div>
 	<!--底部固定定位-->
-	<div class="searchRl-don">
+	<!--<div class="searchRl-don">
 		<ul>
 			<li><a href="nxb-index.html"></a></li>
 			<li><a href="nxb-trend.html"></a></li>
@@ -148,6 +192,21 @@
 			<li><a href="gx-gouwuche.html"></a></li>
 			<li><a href="cr-grzx.html"></a></li>
 		</ul>
-	</div>
+	</div>-->
 </body>
 </html>
+<script type="text/javascript" src="../js/iscroll.js"></script>
+<script>
+	var myScroll;
+
+	function loaded () {
+		myScroll = new IScroll('#wrapper',{
+            scrollbars: true,
+            mouseWheel: true,
+            interactiveScrollbars: true,
+            shrinkScrollbars: 'scale',
+            fadeScrollbars: true
+		});
+	}
+
+</script>

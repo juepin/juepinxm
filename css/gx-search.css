@@ -38,7 +38,7 @@ body{
 	background-size: 55px;
 	background-repeat: no-repeat;
 }
-.search-header .leimu1 div:first-child > a{
+.search-header .leimu1 div:first-child > a,.search-header .leimu1 div:nth-child(3) > a{
 	float:left;
 	width:100%;
 	height:100%;
