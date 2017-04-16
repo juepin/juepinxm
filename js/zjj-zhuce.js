@@ -15,25 +15,25 @@ $(function(){
             },
             sure:{
             	required:true,
-            	equalTo: "pass"
+            	equalTo: "#pass"
             }
 		},
 		messages:{
-			user:"请输入名字",
-			phone:{
-				required:"请输入手机号码",
-				number: "请输入数字",
-				minlength: 11,
-				range: $.validator.format("请输入一个介于 {0} 和 {1} 之间的值"),
-			},
-			pass:{
-				required:"请输入密码",
-				minlength:$.validator.format("密码不能小于{0}个字符")
-			},
-			sure:{
-				required:"请再次输入密码",
-				equalTo: "pass"
-			}
+		// 	user:"请输入名字",
+		// 	phone:{
+		// 		required:"请输入手机号码",
+		// 		number: "请输入数字",
+		// 		minlength: 11,
+		// 		range: $.validator.format("请输入一个介于 {0} 和 {1} 之间的值"),
+		// 	},
+		// 	pass:{
+		// 		required:"请输入密码",
+		// 		minlength:$.validator.format("密码不能小于{0}个字符")
+		// 	},
+		// 	sure:{
+		// 		required:"请再次输入密码",
+		// 		equalTo: "pass"
+		// 	}
 		},
 		errorElement:"b",
 		errorPlacement:function(error,val){

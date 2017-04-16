@@ -13,27 +13,19 @@ $(function(){
             },
 		},
 		messages:{
-			// function(messages,val){
-			// 	if(val.next.length==0){
-					user:"请输入名字",
-			// 	}
-				 // else {
-					// pass:{
-					// 	required:"请输入密码"
-					// 	minlength:$.validator.format("密码不能小于{0}个字符")
-					// }
-				// }
-			// }
-			// user:"请输入名字",
-			// if($("user").value.length==0){
-			// 	user:"请输入名字"
-				
-			// }else{
-				pass:{
-					required:"请输入密码",
-					minlength:$.validator.format("密码不能小于{0}个字符")
+			function(messages,val){
+				if(val.next.length==0){
+					user:"请输入名字"
+				}else {
+					pass:{
+						required:"请输入密码"
+						// minlength:$.validator.format("密码不能小于{0}个字符")
+					}
 				}
-			// }
+			}
+			
+				
+			
 			
 		},
 		errorElement:"b",
@@ -48,8 +40,7 @@ $(function(){
 			}
 			console.log($("i"));
 		}
-	}
-	)
+	})
 	$("#login").on("click",function(){
 		$("#loginform").submit();
 		
