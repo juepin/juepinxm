@@ -109,7 +109,7 @@ body{
 	overflow: hidden;
 }
 .share div:first-child{
-	width: 100%;
+	width: 20%;
 	height: 3.2rem;
 	background-image: url(../img/gx-share.png);
 	background-repeat: no-repeat;
