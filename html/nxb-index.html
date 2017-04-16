@@ -640,10 +640,8 @@ var myScroll;
 		});
 	}
    let a=$('header>.bottom>a')
-   a.click(function(){
+   a.on('touchstart',function(){
    		a.removeClass('active').eq($(this).index()).addClass('active');
    		$('nav').css('display','none').eq($(this).index()).css('display','block');
    })
-  
-
 </script>

@@ -9,7 +9,8 @@ function loaded () {
         mouseWheel: true,
         interactiveScrollbars: true,
         shrinkScrollbars: 'scale',
-        fadeScrollbars: true
+        fadeScrollbars: true,
+        bounce:false,
     });
 }
 document.addEventListener('touchmove', function (e) { e.preventDefault(); }, isPassive() ? {
