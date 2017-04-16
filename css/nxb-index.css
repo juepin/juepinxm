@@ -382,6 +382,7 @@ section>.icon>a>img{
 .don >ul >li:nth-child(1)>a{
 	background: url(../img/n-home1.png);
 	background-size: 100%;
+	background-color:#505A67;
 }
 .don >ul >li:nth-child(2)>a{
 	background: url(../img/gx-fix_78.png);
@@ -433,7 +434,7 @@ section>.icon>a>img{
 	position: absolute;
 	z-index: 1;
 	top: 2.13rem;
-	bottom: .94rem;
+	bottom: 1rem;
 	left: 0;
 	width: 100%;
 	overflow: hidden;

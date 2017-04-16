@@ -119,7 +119,11 @@ header > .bottom .right span {
   width: 33.333333%;
   height: 3.2rem;
 }
-
+.design .per ul li >a{
+	float:left;
+	width:100%;
+	height:100%;
+}
 .design .per ul li .bg {
   background-image: url("../img/creat/cr-grzxtx1.png");
   background-size: cover;
