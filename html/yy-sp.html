@@ -10,10 +10,13 @@
     <meta name="full-screen" content="yes">
     <meta name="format-detection" content="telephone=no, email=no" />
     
-    <script src="../js/rem.js"></script>
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/swiper.css">
     <link rel="stylesheet" href="../css/yy-sp.css">
+    <script src="../js/rem.js"></script>
+    <script src="../js/jquery.js"></script>
+	<script src="../js/swiper.js"></script>
+	<!--<script src="../js/yy-sp.js"></script>-->
 </head>
 <body>
 <div class="swiper-container">
@@ -45,8 +48,15 @@
 </div>
 </body>
 </html>
+<script>
+	var swiper = new Swiper('.swiper-container', {
+    pagination: '.swiper-pagination',
+    paginationClickable: true,
+    parallax: true,
+    speed: 600,
+	resistance:false,
+	touchReleaseOnEdges:true,
+});
+</script>
 
 
-<script src="../js/jquery.js"></script>
-<script src="../js/swiper.js"></script>
-<script src="../js/yy-sp.js"></script>
