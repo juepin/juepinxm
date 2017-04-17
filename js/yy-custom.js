@@ -2,7 +2,7 @@
  * Created by 完美睡姿 on 2017/4/15.
  */
 //滚动条
-<<<<<<< HEAD
+
 var myScroll;
 function loaded () {
     myScroll = new IScroll('#wrapper', {
@@ -18,7 +18,7 @@ document.addEventListener('touchmove', function (e) { e.preventDefault(); }, isP
     capture: false,
     passive: false
 } : false);
-=======
+
 //var myScroll;
 //function loaded () {
 //  myScroll = new IScroll('#wrapper', {
@@ -34,7 +34,7 @@ document.addEventListener('touchmove', function (e) { e.preventDefault(); }, isP
 //  capture: false,
 //  passive: false
 //} : false);
->>>>>>> 89e327f283f74ca1b99dc6f4b303b255ac77d186
+
 //尺寸选择
 var lis=$('.size .selc ul li');
 // lis.click(function(){
