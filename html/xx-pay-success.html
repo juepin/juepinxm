@@ -15,6 +15,27 @@
 	<script src="../js/rem.js"></script>
 	<link rel="stylesheet" type="text/css" href="../css/xx-pay-success.css"/>
 	</head>
+<script type="text/javascript">
+
+//兼容火狐、IE8
+
+//显示遮罩层
+
+function showMask(){
+	$("#mask").css("height",$(document).height());
+	$("#bgshare").css("display","block");
+	$("#mask").css("width",$(document).width());
+	$("#mask").show();
+}
+
+//隐藏遮罩层
+function hideMask(){
+	$("#mask").css("height",0);
+	$("#bgshare").css("display","none");
+	$("#mask").css("width",0);
+	$("#mask").hide();
+}
+</script>
 	<body>
 		<div class="success-header">
 			<div class="leimu1">
@@ -69,26 +90,5 @@
 			</ul>
 		</div>-->
 		<pre class="html" name="code">
-<script type="text/javascript">
-
-//兼容火狐、IE8
-
-//显示遮罩层
-
-function showMask(){
-	$("#mask").css("height",$(document).height());
-	$("#bgshare").css("display","block");
-	$("#mask").css("width",$(document).width());
-	$("#mask").show();
-}
-
-//隐藏遮罩层
-function hideMask(){
-	$("#mask").css("height",0);
-	$("#bgshare").css("display","none");
-	$("#mask").css("width",0);
-	$("#mask").hide();
-}
-</script>
 	</body>
 </html>
