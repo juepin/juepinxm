@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>珏品</title>
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
     <meta name="x5-orientation" content="portrait | landscape" />
     <meta name="screen-orientation" content="portrait">
@@ -10,10 +10,17 @@
     <meta name="full-screen" content="yes">
     <meta name="format-detection" content="telephone=no, email=no" />
     
+<<<<<<< HEAD
     <script src="../js/rem.js"></script>
+=======
+>>>>>>> 89e327f283f74ca1b99dc6f4b303b255ac77d186
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/swiper.css">
     <link rel="stylesheet" href="../css/yy-sp.css">
+    <script src="../js/rem.js"></script>
+    <script src="../js/jquery.js"></script>
+	<script src="../js/swiper.js"></script>
+	<!--<script src="../js/yy-sp.js"></script>-->
 </head>
 <body>
 <div class="swiper-container">
@@ -43,10 +50,21 @@
     <!-- Add Pagination -->
     <div class="swiper-pagination swiper-pagination-white"></div>
 </div>
+<script>
+	var swiper = new Swiper('.swiper-container', {
+    pagination: '.swiper-pagination',
+    paginationClickable: true,
+    parallax: true,
+    speed: 600,
+	resistance:false,
+	touchReleaseOnEdges:true,
+});
+</script>
 </body>
 </html>
+<<<<<<< HEAD
+
+=======
+>>>>>>> 89e327f283f74ca1b99dc6f4b303b255ac77d186
 
 
-<script src="../js/jquery.js"></script>
-<script src="../js/swiper.js"></script>
-<script src="../js/yy-sp.js"></script>

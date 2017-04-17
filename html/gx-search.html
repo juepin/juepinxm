@@ -12,10 +12,11 @@
 	<script type="text/javascript" src="../js/jquery.js"></script>
 	<script type="text/javascript" src="../js/iscroll.js"></script>
 	<script src="../js/demoUtils.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/common.css"/>
 	<link rel="stylesheet" href="../css/swiper.css"> 
 	<link rel="stylesheet" href="../css/gx-search.css"> 
 	<script type="text/javascript" src="../js/swiper.js"></script>
-	
+	<script src="../js/yy-iscroll.js"></script>
 	<!--<script type="text/javascript" src="../js/gx-search.js"></script>-->
 	<script src="../js/rem.js"></script>
     <title></title>
@@ -176,9 +177,8 @@
 			<li><a href="cr-grzx.html"></a></li>
 		</ul>
 	</div>-->
-</body>
-</html>
-    <script>
+	
+ <script>
     var swiper = new Swiper('.swiper-container', {
         pagination: '.swiper-pagination',
         effect: 'coverflow',
@@ -197,20 +197,27 @@
     
     
     
-    var myScroll;
-
-	function loaded () {
-		myScroll = new IScroll('#wrapper',{
-            scrollbars:false,
-            mouseWheel: true,
-            interactiveScrollbars: true,
-            shrinkScrollbars: 'scale',
-            fadeScrollbars: true
-		});
-	}
-    document.addEventListener('touchmove', function (e) { e.preventDefault(); }, isPassive() ? {
-        capture: false,
-        passive: false
-    } : false);
+//  var myScroll;
+//
+//	function loaded () {
+//		myScroll = new IScroll('#wrapper',{
+//          scrollbars:false,
+//          mouseWheel: true,
+//          interactiveScrollbars: true,
+//          shrinkScrollbars: 'scale',
+//          fadeScrollbars: true
+//		});
+//	}
+//  document.addEventListener('touchmove', function (e) { e.preventDefault(); }, isPassive() ? {
+//      capture: false,
+//      passive: false
+//  } : false);
     </script>
+	
+	
+	
+	
+</body>
+</html>
+
 	
