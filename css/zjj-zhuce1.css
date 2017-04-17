@@ -1,10 +1,17 @@
 @import url("common.css");
+html{
+	width:100%;
+	hieght:100%;
+	
+}
 
 body{
 	background: url("../img/zjj-bg.png");
 	background-size:cover;
+	background-repeat:no-repeat;
 	background-position:center;
 	height:13.34rem; 
+	
 }
 *{
 	font-family: "微软雅黑";
@@ -234,7 +241,7 @@ body{
 	position: absolute;
 	left: 50%;
 	margin-left: -1.52rem;
-	margin-top: 0.6rem;
+	margin-top: 0.1rem;
 }
 .box .login{
 	width: 3.05rem;
@@ -250,7 +257,7 @@ body{
 .box .otherway{
 	width: 5.2rem;
 	height: 2.2rem;
-	margin: 2.2rem auto;
+	margin: 1.5rem auto;
 }
 .box .otherway .othtitle{
 	width: 100%;

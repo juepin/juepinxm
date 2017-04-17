@@ -8,7 +8,10 @@ div.head {
   height: 1.20rem;
   margin: 0 auto;
   background-image: url(../img/cr-bg1.png);
-  position: relative;
+  position: fixed;
+  top:0;
+  left:0;
+  z-index:100;
 }
 
 .head .line {
@@ -57,7 +60,7 @@ div.list {
   width: 7.02rem;
   height: auto;
   background: #fff;
-  margin: 0.2rem auto;
+  margin: 1.5rem auto 0.2rem;
 }
 
 div.list > div.show {

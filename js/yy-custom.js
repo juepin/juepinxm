@@ -5,20 +5,20 @@
 var myScroll;
 function loaded () {
     myScroll = new IScroll('#wrapper', {
-        scrollbars: true,
+        scrollbars:false,
         mouseWheel: true,
         interactiveScrollbars: true,
         shrinkScrollbars: 'scale',
-        fadeScrollbars: true
+        fadeScrollbars: true,
+        click:true,
     });
 }
-
 document.addEventListener('touchmove', function (e) { e.preventDefault(); }, isPassive() ? {
     capture: false,
     passive: false
 } : false);
 //尺寸选择
-let lis=$('.size .selc ul li');
+var lis=$('.size .selc ul li');
 // lis.click(function(){
 //     lis.removeClass('act');
 //     $(this).addClass('act')
@@ -27,10 +27,10 @@ lis.on('touchstart',function(){
     lis.removeClass('act');
     $(this).addClass('act')
 })
-let n=1;
-let lef=$('.add .lef');
-let righ=$('.add .righ');
-let num=$('.add .mid p span');
+var n=1;
+var lef=$('.add .lef');
+var righ=$('.add .righ');
+var num=$('.add .mid p span');
 lef.on('touchstart',function () {
     lef.children().eq(0).addClass('select');
     righ.children().eq(0).removeClass('select');

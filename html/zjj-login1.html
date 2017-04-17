@@ -65,8 +65,9 @@
 		<!-- 是否记住密码结束 -->
 
 		<!-- 开始选购 -->
-		<a href="script:;" id="gou"><div class="login" type="submit" id="login"></div></a>
+		<a href="javascript:;" id="gou"><div class="login" type="submit" id="login"></div></a>
 		
+		<div class="login" type="submit" id="login"></div>
 		<!-- 其他登录方式 -->
 		<div class="otherway">
 				<div class="othtitle">
@@ -114,4 +115,18 @@
         //             }
         //      }
         // }
+        
+        
+        var input=$('input');
+       	var a=$('a#gou');
+       	a.on('touchstart',function(){
+       		if(input.eq(0).val()&&input.eq(1).val()){
+       			location.href='gx-gouwuche.html';
+       		}
+       	})
+        
+        
+        
+        
+        
 </script>

@@ -13,18 +13,18 @@
     <meta name="format-detection" content="telephone=no,email=no">
     <title>cr-设计师详情</title>
     
-    
+    <script src='../js/rem.js'></script>
     <link rel="stylesheet" href="../css/common.css" />
     <link rel="stylesheet" href="../css/cr-designer.css" />
     
     
 	</head>
-	<style>
+	<!--<style>
 		#wrapper {
 			position: absolute;
 			z-index: 1;
 			top: 0;
-			bottom: 0.50rem;
+			bottom: 0.2rem;
 			left: 0;
 			width: 100%;
 			overflow: hidden;
@@ -50,10 +50,12 @@
 			-o-text-size-adjust: none;
 			text-size-adjust: none;
 		}
-		</style>
-	<body class='crdesigner' onload="loaded()">
-<div id="wrapper">
-	<div id="scroller">
+		</style>-->
+	<!--<body class='crdesigner' onload="loaded()">-->
+		
+<body class='crdesigner'>
+<!--<div id="wrapper">
+	<div id="scroller">-->
 		<div class="head">
 			<div class="line"></div>
 			<div class="top">
@@ -199,11 +201,12 @@
 		</div>
 		
 		
-	</div>
-</div>
+	<!--</div>
+</div>-->
 	</body>
 </html>
-<script src='../js/rem.js'></script>
+
+<!--<script src="../js/demoUtils.js"></script>
 <script src='../js/iscroll.js'></script>
 <script>
 	let myScroll;
@@ -218,4 +221,11 @@
 			bounce:false
 		});
 	}
-</script>
+	
+	
+	
+	document.addEventListener('touchmove', function (e) { e.preventDefault(); }, isPassive() ? {
+	    capture: false,
+	    passive: false
+	} : false);
+</script>-->

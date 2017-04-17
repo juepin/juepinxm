@@ -20,7 +20,7 @@
 			position: absolute;
 			z-index: 1;
 			top: 0;
-			bottom: 0.50rem;
+			bottom: 0.2rem;
 			left: 0;
 			width: 100%;
 			overflow: hidden;
@@ -192,11 +192,12 @@
 	function loaded(){
 		var myscroll=new IScroll("#wrapper",{
 
-            scrollbars: true,
+            scrollbars: false,
 			mouseWheel: true,
 			interactiveScrollbars: true,
 			shrinkScrollbars: 'scale',
-			fadeScrollbars: true
+			fadeScrollbars: true,
+			click:true,
         });
 	}
    

@@ -157,8 +157,8 @@ html {
     line-height:0.4rem;
 }
 .hot ul li .info > img{
-    width:76px;
-    height:4px;
+    width:0.76rem;
+    height:0.04rem;
     margin-left:0.05rem;
 }
 .hot ul li .info ul{

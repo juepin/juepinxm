@@ -36,7 +36,7 @@ body {
 }
 .swiper-slide .btn{
     position:absolute;
-    bottom:1.4rem;
+    bottom:1rem;
     right:0.32rem;
     z-index:100000;
     width:3rem;
@@ -60,7 +60,7 @@ body {
     height: 100%;
     -webkit-background-size: cover;
     background-size: cover;
-    background-position: center;
+    background-position:center;
 }
 
 
