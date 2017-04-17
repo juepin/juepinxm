@@ -67,12 +67,12 @@ body{
 }
 .success-header .leimu2 .kuang{
 	width: 3.84rem;
-	height: .9rem;
+	height: .72rem;
 	margin: 0 auto;
 	margin-bottom: .3rem;
 	background-image: url(../img/xx-good.png);
-	background-position: -1px 1px;
-	background-size: 194px;
+	background-position:center;
+	background-size:100%;
 	position: relative;
 	background-repeat: no-repeat;
 }
