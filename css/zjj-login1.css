@@ -243,7 +243,7 @@ body{
 .box .login{
 	width: 100%;
 	height: 100%;
-	background: rgba(0,0,0,0) url(../img/zjj-login.png) no-repeat center center/3.26rem 1.26rem;
+	background: url(../img/zjj-login.png) no-repeat center center/3.26rem 1.26rem;
 	outline: none;
 	border:none;
 }

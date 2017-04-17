@@ -124,7 +124,8 @@ div.font div.font1 {
 }
 
 div.font div.font1 span {
-  font-size: 0.12rem;
+  font-size: 0.2rem;
+  text-transform:uppercase;
   color: #b1b1b1;
   line-height: 0;
   font-weight: normal;
@@ -327,18 +328,18 @@ div.left p:first-child {
 div.left p:nth-child(2) {
   float: left;
   height: 0.12rem;
-  font-size: 0.12rem;
+  font-size: 0.2rem;
   color: #898989;
   width: 100%;
 }
 
 div.left p:nth-child(2) b {
-  font-size: 0.12rem;
+  font-size: 0.2rem;
   color: #363636;
 }
 
 div.left p:nth-child(2) span {
-  font-size: 0.12rem;
+  font-size: 0.2rem;
   float: right;
   margin-top: -0.02rem;
   color: #898989;

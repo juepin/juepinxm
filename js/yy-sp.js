@@ -6,4 +6,6 @@ var swiper = new Swiper('.swiper-container', {
     paginationClickable: true,
     parallax: true,
     speed: 600,
+	resistance:false,
+	touchReleaseOnEdges:true,
 });

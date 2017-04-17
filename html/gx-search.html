@@ -15,7 +15,8 @@
 	<link rel="stylesheet" href="../css/swiper.css"> 
 	<link rel="stylesheet" href="../css/gx-search.css"> 
 	<script type="text/javascript" src="../js/swiper.js"></script>
-	<script type="text/javascript" src="../js/gx-search.js"></script>
+	
+	<!--<script type="text/javascript" src="../js/gx-search.js"></script>-->
 	<script src="../js/rem.js"></script>
     <title></title>
 </head>
@@ -68,7 +69,7 @@
 	
 	<!--搜索框-->
 	<div class="search-sousuo">
-		<input type="" name="" id="" value="Search" />
+		<input type="" name="" id="" placeholder="Search" />
 		<div class="dian1"></div>
 		<div class="xiangji"></div>
 		<div class="dian2"></div>
@@ -200,7 +201,7 @@
 
 	function loaded () {
 		myScroll = new IScroll('#wrapper',{
-            scrollbars: true,
+            scrollbars:false,
             mouseWheel: true,
             interactiveScrollbars: true,
             shrinkScrollbars: 'scale',

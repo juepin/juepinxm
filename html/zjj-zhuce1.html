@@ -23,7 +23,7 @@
 		<div class="leimu1">
 			<div><a href="zjj-login1.html"></a></div>
 			<div>·注·册·</div>
-			<div><a href=""></a></div>
+			<div><a href="zjj-login1.html"></a></div>
 		</div>
 	</div>
 	<!-- 顶部结束 -->
@@ -102,3 +102,13 @@
 		<!-- 登录框结束 -->
 </body>
 </html>
+
+<script>
+	 var input=$('input');
+       	var a=$('a#gou');
+       	a.on('touchstart',function(){
+       		if(input.eq(0).val()&&input.eq(1).val()&&input.eq(2).val()&&input.eq(3).val()){
+       			location.href='gx-gouwuche.html';
+       		}
+       	})
+</script>

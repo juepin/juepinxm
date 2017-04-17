@@ -5,11 +5,13 @@ var myScroll;
 
 function loaded () {
     myScroll = new IScroll('#wrapper', {
-        scrollbars: true,
+        scrollbars: false,
         mouseWheel: true,
         interactiveScrollbars: true,
         shrinkScrollbars: 'scale',
-        fadeScrollbars: true
+        fadeScrollbars: true,
+        click:true,
+        bounce:false
     });
 }
 document.addEventListener('touchmove', function (e) { e.preventDefault(); }, isPassive() ? {

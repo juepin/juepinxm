@@ -9,7 +9,10 @@ div.head {
   height: 2.1rem;
   margin: 0 auto;
   background-image: url(../img/cr-bg1.png);
-  position: relative;
+  position: fixed;
+  top:0;
+  left:0;
+  z-index:100;
 }
 
 .head .line {
@@ -33,6 +36,7 @@ div.head {
 }
 
 .head .top a img {
+	margin-right:-0.24rem;
   display: block;
   height: 0.88rem;
 }
@@ -46,62 +50,67 @@ div.head {
 }
 
 .head > div.all {
-  width: 3.12rem;
-  height: 0.8rem;
+  width: 3.75rem;
+  height: 0.92rem;
   margin: 0 auto;
   padding-top: 0.2rem;
   box-sizing: border-box;
   position: relative;
+  /*background-image:url(../img/cr-hyqq.png);
+  background-position:center;*/
+  
 }
 
 .head > div.all > img {
-  height: 0.6rem;
+  height: 0.72rem;
   text-align: center;
 }
 
 .head > div.all > div.three {
   position: absolute;
-  top: 0.28rem;
+  top: 0.3rem;
   left: 0.08rem;
-  width: 1rem;
-  height: 0.4rem;
+  width: 1.38rem;
+  height: 0.48rem;
   border-radius: 0.2rem;
 }
 
 .head > div.all > div.active {
-  background: #3292CF;
+  background-image:url(../img/creat/md_53_03.png);
+  background-position:center;
+  background-size:cover;
 }
 
 .head > div.all > div.three:nth-of-type(2) {
-  left: 1.06rem;
+  left: 1.26rem;
 }
 
 .head > div.all > div.three:nth-of-type(3) {
-  left: 2.04rem;
+  left: 2.4rem;
 }
 
 .head > div.all > div.three > p {
   height: 100%;
   text-align: center;
-  line-height: 0.4rem;
+  line-height: 0.48rem;
   color: #eaeaea;
-  font-size: 0.16rem;
+  font-size: 0.24rem;
 }
 
 div.detail {
   width: 7.02rem;
   height: auto;
-  margin: 0 auto;
+  margin:2.5rem auto 0; 
 }
 
 div.detail > p:first-child {
-  font-size: 0.22rem;
+  font-size: 0.28rem;
   margin-top: 0.2rem;
   color: #919191;
 }
 
 div.detail > p:nth-child(2) {
-  font-size: 0.12rem;
+  font-size: 0.2rem;
   color: #919191;
   margin-bottom: 0.2rem;
 }
@@ -135,7 +144,7 @@ div.detail > div.list1 p:nth-of-type(1) {
   margin-left: 0.2rem;
   width: 50%;
   margin-top: 0.2rem;
-  font-size: 0.24rem;
+  font-size: 0.28rem;
   color: #666;
 }
 
@@ -183,7 +192,7 @@ div.detail > div.num {
 div.detail > div.num > p:first-child {
   float: left;
   height: 100%;
-  font-size: 0.22rem;
+  font-size: 0.28rem;
   color: #919191;
 }
 
@@ -298,6 +307,7 @@ div.list {
   margin: 0 auto 0.15rem;
   border-radius: 0.10rem;
   box-shadow: 0 0 0.05rem 0.01rem #E3E3E3;
+  background:#fff;
 }
 
 div.list > div.toux {
@@ -331,7 +341,9 @@ div.list >div.toux >div.cir >a{
    width:100%;
    height:100%; 
 }
-
+div.last{
+	margin-bottom:1rem;
+}
 div.two > div.toux > div.cir {
   background-image: url(../img/cr-tpic3.jpg);
   background-size: 150%;
@@ -360,10 +372,10 @@ div.list p:nth-of-type(1) > img {
   height: 0.16rem;
 }
 
-div.list p:nth-of-type(1) > img:last-child {
+/*div.list p:nth-of-type(1) > img:last-child {
   height: 0.2rem;
   margin-left: 0.1rem;
-}
+}*/
 
 div.list > div.line2 {
   width: 2.40rem;
@@ -410,7 +422,7 @@ div.list > img {
   width: 100%;
   height: .88rem;
   background: #323840;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 0;
   overflow: hidden;

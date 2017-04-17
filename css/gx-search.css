@@ -30,12 +30,12 @@ body{
 	width: .8rem;
 	height: .8rem;
 	float: left;
-	margin-left: .4rem;
-	margin-top: .45rem;
+	margin-left: .2rem;
+	margin-top: .25rem;
 	display: inline-block;
 	background-image: url(../img/gx-search_102.png);
-	background-position: -13px -10px;
-	background-size: 55px;
+	background-position:center;
+	background-size:cover;
 	background-repeat: no-repeat;
 }
 .search-header .leimu1 div:first-child > a,.search-header .leimu1 div:nth-child(3) > a{
@@ -44,27 +44,28 @@ body{
 	height:100%;
 }
 .search-header .leimu1 div:nth-child(2){
-	width: 2.06rem;
-	height: .9rem;
+	width: 1.92rem;
+	height: .88rem;
 	float: left;
-	margin-left: 1.5rem;
-	margin-top: .45rem;
+	margin-left: 1.7rem;
+	margin-top: .25rem;
 	display: inline-block;
 	position: relative;
 	background-image: url(../img/gx-chaoliuguan.png);
 	background-repeat: no-repeat;
-	background-size: 100px;
+	background-size:100%;
+	background-position:center;
 }
 .search-header .leimu1 div:last-child{
-	width: 1.4rem;
-	height: .8rem;
+	width: 1.2rem;
+	height: 0.88rem;
 	float: right;
-	margin-right: .4rem;
-	margin-top: .45rem;
+
+	margin-top: .25rem;
 	display: inline-block;
 	background-image: url(../img/n-search.png);
-	background-position: 1px -11px;
-	background-size: 80px;
+	background-position: center;
+	background-size:cover;
 	background-repeat: no-repeat;
 }
 
