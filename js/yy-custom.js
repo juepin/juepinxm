@@ -2,21 +2,21 @@
  * Created by 完美睡姿 on 2017/4/15.
  */
 //滚动条
-var myScroll;
-function loaded () {
-    myScroll = new IScroll('#wrapper', {
-        scrollbars:false,
-        mouseWheel: true,
-        interactiveScrollbars: true,
-        shrinkScrollbars: 'scale',
-        fadeScrollbars: true,
-        click:true,
-    });
-}
-document.addEventListener('touchmove', function (e) { e.preventDefault(); }, isPassive() ? {
-    capture: false,
-    passive: false
-} : false);
+//var myScroll;
+//function loaded () {
+//  myScroll = new IScroll('#wrapper', {
+//      scrollbars:false,
+//      mouseWheel: true,
+//      interactiveScrollbars: true,
+//      shrinkScrollbars: 'scale',
+//      fadeScrollbars: true,
+//      click:true,
+//  });
+//}
+//document.addEventListener('touchmove', function (e) { e.preventDefault(); }, isPassive() ? {
+//  capture: false,
+//  passive: false
+//} : false);
 //尺寸选择
 var lis=$('.size .selc ul li');
 // lis.click(function(){
