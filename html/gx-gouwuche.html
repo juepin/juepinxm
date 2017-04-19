@@ -288,68 +288,16 @@
 			<li><a href="gx-gouwuche.html"></a></li>
 			<li><a href="cr-grzx.html"></a></li>
 		</ul>
-	</div>
-<script>
-//	
-	var dian=$(".header .leimu2 .kuang .three");
-	var ping=$('.ping')
-//	dian.click(function(index){
-	dian.each(function(val,index){
-		$(this).on("touchstart",function(index){
-			$(this).addClass('active').siblings().removeClass('active');
-			ping.eq($(this).index()).css('display','block').siblings('.ping').css('display','none');
-		})
-	})
-	
-//	$(this).removeClass('active').eq($(this).index()).addClass('active');
-//			$(this).parents('.header').siblings('.ping').css('display','none').eq($(this).index()).css('display','block')
-	
-//	var dian=document.querySelectorAll(".header .leimu2 .kuang .three");
-//	var ping=document.querySelectorAll('.ping');
-//	dian.forEach(function(val,index){
-//		
-//		val.addEventListener('touchstart',function(){
-//			ping.forEach(function(val,index){
-//				val.style.display='none';
-//				dian[index].classList.remove('active');
-//			})
-//			val.classList.add('active');
-//			ping[index].style.display='block';
-//		})
-//		
-//	})
-</script>	
+	</div>	
 </body>
 </html>
-<script>
-	
-	
-//	
+<script>	
 	var dian=$(".header .leimu2 .kuang .three");
 	var ping=$('.ping')
-//	dian.click(function(index){
 	dian.each(function(val,index){
 		$(this).on("touchstart",function(index){
 			$(this).addClass('active').siblings().removeClass('active');
 			ping.eq($(this).index()).css('display','block').siblings('.ping').css('display','none');
 		})
 	})
-	
-//	$(this).removeClass('active').eq($(this).index()).addClass('active');
-//			$(this).parents('.header').siblings('.ping').css('display','none').eq($(this).index()).css('display','block')
-	
-//	var dian=document.querySelectorAll(".header .leimu2 .kuang .three");
-//	var ping=document.querySelectorAll('.ping');
-//	dian.forEach(function(val,index){
-//		
-//		val.addEventListener('touchstart',function(){
-//			ping.forEach(function(val,index){
-//				val.style.display='none';
-//				dian[index].classList.remove('active');
-//			})
-//			val.classList.add('active');
-//			ping[index].style.display='block';
-//		})
-//		
-//	})
 </script>
